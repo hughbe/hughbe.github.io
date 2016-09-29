@@ -1,0 +1,56 @@
+@media screen and (max-width: 600px) {
+	* {
+		font-size: 100%;
+	}
+	h2 {
+		font-size: 120%;
+	}
+
+	.width3, .width2 {
+		width: 80% !important;
+		margin: 0 auto;
+		padding-bottom: 0.25em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.width3, .width2 {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.side-navigation-bar {
+		width: 100%;
+		float: none;
+		position: static;	
+	}
+
+	.main {
+		margin-left: 0;
+	}
+
+	.box {
+		min-width: 95%;
+		max-width: 95%;
+		width: auto !important;
+		margin: 0.5em 0 !important;
+	}
+}
+
+@media screen and (max-width: 100em) {
+	.box {
+		width: 40%;
+		margin: 2.5% 2.5%;
+	}
+
+	.open-source-box {
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.side-navigation-items li:hover {
+  		background-color: #101015;
+	}
+}

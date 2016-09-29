@@ -1,0 +1,20 @@
+.blogpost-content {
+  font-size: 80%;
+}
+
+.blogpost-header {
+  overflow: hidden;
+}
+
+.blogpost-short-title {
+  float: left;
+}
+
+.blogpost-short-date {
+  float: right;
+  font-weight: normal;
+}
+
+strong {
+  font-weight: bold;
+}

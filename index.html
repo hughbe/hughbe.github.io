@@ -1,61 +1,387 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Home by hughbe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Home</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+<html>
 
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="Hugh Bellamy" />
+  <meta name="keywords" content="Hugh Bellamy, home" />
+  <meta name="author" content="Hugh Bellamy" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/size-dependent-styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+  <main>
+    <header class="navigation-bar">
+      <h1 class="navigation-bar-title">Hugh Bellamy</h1>
+      <ul class="navigation-items">
+        <li><a href="blog.html">Blog</a>
+        </li>
+        <li><a href="https://itunes.apple.com/gb/developer/hugh-bellamy/id505295952">App Store</a>
+        </li>
+        <li><a href="https://github.com/hughbe">GitHub</a>
+        </li>
+        <li><a href="resume.html">Resume</a>
+        </li>
+      </ul>
+    </header>
     <section class="main-content">
-      <h3>
-<a id="welcome-to-hugh-bellamys-website" class="anchor" href="#welcome-to-hugh-bellamys-website" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Hugh Bellamy's Website</h3>
+      <section class="side-navigation-bar">
+        <ul class="side-navigation-items">
+          <li>
+            <h2><a href="#apps" id="apps-item" class="side-navigation-item default-item">Apps</a></h2>
+          </li>
+          <li>
+            <h2><a href="#open-source" id="open-source-item" class="side-navigation-item">Open Source</a></h2>
+          </li>
+        </ul>
+      </section>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
+      <section class="main">
+        <div id="apps-section" class="default-section hidden-section index-section">
+          <h2>Hi!</h2>
+          <p>Hi, I'm Hugh, an 18 year old aspiring developer.</p>
+          <p>Check out my site for various apps and projects, open source libraries and my blog.</p>
+          <hr/>
+          <h2>Apps</h2>
+          <p>I develop apps for the iPhone and PCs in Objective C, Swift, C, Python, C# and Java.</p>
+          <ul class="indented-list content-list">
+            <li>
+              <a href="#canvas-info" class="info-link">Canvas</a>
+              <div class="bordered-box info" id="canvas-info">
+                <p>A fully customizable drawing interface suited to all your artistic desires and expressions: the only thing limiting you is your artistic ability.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/canvas/1.png" alt="Screenshot 1" class="screenshot width3" />
+                  <img src="resources/screenshots/canvas/2.png" alt="Screenshot 2" class="screenshot width3" />
+                  <img src="resources/screenshots/canvas/3.png" alt="Screenshot 3" class="screenshot width3" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Draw in any color and any width</li>
+                  <li>Change the opacity of your writings and configure blend modes in your canvasses</li>
+                  <li>Change the shape of your brush - square, rounded etc.</li>
+                  <li>Add a variety of shapes, line dashes and letters to your canvases</li>
+                  <li>Add textures (such as brick, rock, concrete, wood) to your canvasses to increase realism and expand your drawing options</li>
+                  <li>Draw on pictyres, video on a custom sized and colored blank canvases</li>
+                  <li>Redo, undo, move, delete and fill previous actions</li>
+                  <li>Save and share canvasses with a name to your phone</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Objective C</li>
+                  <li>Frameworks: UIKit, CoreAnimation, CoreGraphics, Foundation and CoreData</li>
+                  <li>Technologies: Auto Layout, Storyboards and In-App Purchases</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#clickboard-info" class="info-link">ClickBoard</a>
+              <div class="bordered-box info" id="clickboard-info">
+                <p>An app that converts your iPhone into a mouse and controller for your PC. Built as part of the <a href="http://young-enterprise.org.uk">Young Enterprise Scheme</a>. The project website can be found <a href="http://clickboardapp.com">here</a>.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/clickboard/1.png" alt="Screenshot 1" class="screenshot width3" />
+                  <img src="resources/screenshots/clickboard/2.png" alt="Screenshot 2" class="screenshot width3" />
+                  <img src="resources/screenshots/clickboard/3.png" alt="Screenshot 3" class="screenshot width3" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Connect to the same WiFi network and start using ClickBoard</li>
+                  <li>ClickBoard samples your iPhone's exceptionally accurate accelerometer and gyroscope 48 times a second to calculate device movement</li>
+                  <li>Launch apps on your PC right from your device</li>
+                  <li>Control slideshows and presentations from your device</li>
+                  <li>Control playback of iTunes and your music library from your device</li>
+                  <li>Rotate your device to launch a multitouch trackpad to control your PC's mouse with your finger</li>
+                  <li>Type and enter keyboard commands into your PC from your device</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Objective C, C and C#</li>
+                  <li>Frameworks: UIKit, Foundation, CoreFoundation, CoreMotion, .NET Framework, and Communicate</li>
+                  <li>Technologies: Auto Layout, Storyboards, Bonjour, Sockets and QRCodes</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#homework-planner-info" class="info-link">Homework Planner</a>
+              <div class="bordered-box info" id="homework-planner-info">
+                <p>Homework and School Planner is the ideal app for students of all ages at school or university to stay organised and simplify your working life.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/homework-planner/1.png" alt="Screenshot 1" class="screenshot width3" />
+                  <img src="resources/screenshots/homework-planner/2.png" alt="Screenshot 2" class="screenshot width3" />
+                  <img src="resources/screenshots/homework-planner/3.png" alt="Screenshot 3" class="screenshot width3" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>View all pieces and homework and lessons in the future using the calendar view</li>
+                  <li>View all your pieces of homework by subject</li>
+                  <li>Search for pieces of homework by subject, content or teacher</li>
+                  <li>Add to and view attachments (photos and websites) for individual pieces of homework</li>
+                  <li>Get notified before your piece of homework is due in</li>
+                  <li>Set the type of homework you have been set, be it revision, essay, exercise etc.</li>
+                  <li>View your school timetable as well as pieces of homework</li>
+                  <li>View a two week timetable if necessary</li>
+                  <li>Color code subjects</li>
+                  <li>Set multiple teachers for the same subject</li>
+                  <li>A consistent, elegant and easy-to-use design that adapts to all devices</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Objective C</li>
+                  <li>Frameworks: UIKit, CoreAnimation, Foundation, CoreData and EventKit</li>
+                  <li>Technologies: Auto Layout, Storyboards and In-App Purchases</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#remote-file-browser-info" class="info-link">Remote File Browser</a>
+              <div class="bordered-box info" id="remote-file-browser-info">
+                <p>An app that lets you browse, open and edit files and folders on your computer straight from your iOS device.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/remote-file-browser/1.png" alt="Screenshot 1" class="screenshot width3" />
+                  <img src="resources/screenshots/remote-file-browser/2.png" alt="Screenshot 2" class="screenshot width3" />
+                  <img src="resources/screenshots/remote-file-browser/3.png" alt="Screenshot 3" class="screenshot width3" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Browse a list of all folders on your computer</li>
+                  <li>Open pictures, text files, word documents and all other files stored on your PC on your device</li>
+                  <li>Launch files, applications and folders on your PC from your device</li>
+                  <li>Rename, move, copy or delete files and folders on your PC from your device</li>
+                  <li>Add a file or folder to your favorites list to access it on demand from the sidebar</li>
+                  <li>Use on all iPhones, iTouches and iPads as well as any computer running a Mac or Windows operating system connected to your network</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Objective C, C and C#</li>
+                  <li>Frameworks: UIKit, Foundation, CoreFoundation, .NET Framework and Communicate</li>
+                  <li>Technologies: Auto Layout, Storyboards, Bonjour and Sockets</li>
+                </ul>
+                <h4>Installation Instructions</h4>
+                <ol class="indented-list">
+                  <li>Connect your iOS device and PC to the same WiFi network</li>
+                  <li><a href="https://github.com//releases">Download the software release on your computer and install/run the executable</a>
+                  </li>
+                  <li>Make sure you allow the software access to your firewall if you are prompted, otherwise Remote File Browser will not be able to work</li>
+                  <li>Launch the software on your PC and open the Remote File Browser app on your device</li>
+                  <li>Tap on the name of your computer and start browsing!</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <a href="#speak-easy-info" class="info-link">Speak Easy</a>
+              <div class="bordered-box info" id="speak-easy-info">
+                <p>An app that converts text to speech in an incredibly configurable way.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/speak-easy/1.png" alt="Screenshot 1" class="screenshot width3" />
+                  <img src="resources/screenshots/speak-easy/2.png" alt="Screenshot 2" class="screenshot width3" />
+                  <img src="resources/screenshots/speak-easy/3.png" alt="Screenshot 3" class="screenshot width3" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Convert text to speech</li>
+                  <li>Customize the pitch, speed and accent of the generated speech</li>
+                  <li>Save customizations as presets to use later</li>
+                  <li>Share presets and funny entries to your friends, family or the world on the internet</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Objective C</li>
+                  <li>Frameworks: UIKit and Foundation</li>
+                  <li>Technologies: Auto Layout, Storyboards, Networking and Social Sharing</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="open-source-section" class="hidden-section index-section">
+          <h2>Hi!</h2>
+          <p>Hi, I'm Hugh, an 18 year old aspiring developer.</p>
+          <p>Check out my site for various apps and projects, open source libraries and my blog.</p>
+          <hr/>
+          <h2>Open Source</h2>
+          <p>I enjoy being involved with the open source community. I have contributed to several repositories and have released a number of libraries and proejcts to the community. <a href="https://github.com/hughbe">Find me on Github here.</a>
+          </p>
+          <ul class="indented-list content-list">
+            <li>
+              <a href="#communicate-info" class="info-link">Communicate</a>
+              <div class="bordered-box info" id="communicate-info">
+                <p>An open source cross-platform library that aims to make it easy to connect Windows, Mac OSX and iOS devices to each other and send data between devices simply, reliably and effectively.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/communicate/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Supports iOS, Mac OSX and iOS with identical APIs</li>
+                  <li>Send any type of data between devices</li>
+                  <li>Add a header or footer to data and get updates on progress etc. on receiving and sending data</li>
+                  <li>Register new data types and change the way that Communicate operates by extending the library</li>
+                  <li>The library is designed to be used in a modular way - you can choose what functions Communicate runs</li>
+                  <li>View the demo and example application as well as code documentation</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: C# and Swift</li>
+                  <li>Frameworks: Foundation, CoreFoundation and .NET Framework</li>
+                  <li>Technologies: Sockets, TCP, Bonjour, Networking and Streams</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#day-date-picker-info" class="info-link">Day Date Picker</a>
+              <div class="bordered-box info" id="day-date-picker-info">
+                <p>An open source drop in highly customizable date picker which displays the day of the week alongside the day number column written in Objective C for iOS.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/day-date-picker/1.png" alt="Screenshot 1" class="screenshot width2" />
+                  <img src="resources/screenshots/day-date-picker/2.png" alt="Screenshot 2" class="screenshot width2" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Add a simple picker with delegate methods enabling you to get feedback on user entry and control the display of the picker</li>
+                  <li>Change how the picker is presented and displayed to the user</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Swift</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#html-generator-info" class="info-link">Html Generator</a>
+              <div class="bordered-box info" id="html-generator-info">
+                <p>An open source library that simplifies generating complex HTML files from C# code. In fact, this site was generated using this library.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/html-generator/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Use method chaining to create complex HTML trees and change elements</li>
+                  <li>Use all HTML tags and attributes and create your own</li>
+                  <li>Add any attribute and content to all HTML elements, including classes, ids and styles</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: C#</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#http-server-info" class="info-link">HTTP Server</a>
+              <div class="bordered-box info" id="http-server-info">
+                <p>An open source versatile local and remote HTTP web server written in C#.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/http-server/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Change the root directory and server port all from an easy to use GUI</li>
+                  <li>Great for abstracting URLs and as a versatile local server</li>
+                  <li>Run or install the application and the server starts up instantly, even on startup if you want</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: C#</li>
+                </ul>
+                <h4>Installation Instructions</h4>
+                <ol class="indented-list">
+                  <li><a href="https://github.com//releases">Download the software release for your computer and install/run the executable</a>
+                  </li>
+                  <li>Make sure to allow the software access to your firewall if you are prompted</li>
+                  <li>Launch the software on your PC and then open HTTP Server on your computer</li>
+                  <li>Go to your web browser and type <a href="http://localhost/">http://localhost/</a> to start browsing</li>
+                  <li>You can access the server's settings by clicking on the HTTP Server icon in your taskbar</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <a href="#notifications-info" class="info-link">Notifications</a>
+              <div class="bordered-box info" id="notifications-info">
+                <p>A drop-in compilation of code files across platforms and programming languages that simplify posting notifications of various styles to the end user.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/notifications/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Add only two lines of code to get a fully functional notifications manager into your app</li>
+                  <li>Change the tooltip text and icon of your tasbar icon as well as the text, content, duration and icon of notifications</li>
+                  <li>Add buttons with click callback actions to the context menu of your taskbar icon (Windows only)</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: C# and Objective C</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#phone-number-picker-info" class="info-link">Phone Number Picker</a>
+              <div class="bordered-box info" id="phone-number-picker-info">
+                <p>An open source drop in phone number and country picker written in Swift for iOS. It is based off the WhatsApp account creation screen in terms of styling and functionality.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/phone-number-picker/1.png" alt="Screenshot 1" class="screenshot width2" />
+                  <img src="resources/screenshots/phone-number-picker/2.png" alt="Screenshot 2" class="screenshot width2" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Add a simple picker controller with delegate methods enabling you to get feedback on user entry</li>
+                  <li>View the demo and example application as well as code documentation</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Swift</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#semi-modal-controller-info" class="info-link">Semi Modal Controller</a>
+              <div class="bordered-box info" id="semi-modal-controller-info">
+                <p>An open source library, written in Objective C for iOS, that allows you to present a UIViewController semi-modally (over the current content). Designed in a modular way and with subclassing in mind, this library lets you present view controllers that you can slide, zoom, dismiss and subclass.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/semi-modal-controller/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Add a a pretty and highly customizable library that provides a way of presenting view controllers semi-modally</li>
+                  <li>View the demo and example application as well as code documentation</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: Swift</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#version-checker-info" class="info-link">Version Checker</a>
+              <div class="bordered-box info" id="version-checker-info">
+                <p>An open source drop-in library, written in C#, that simplifies version checking for applications of all types.</p>
+                <div class="screenshots">
+                  <img src="resources/screenshots/version-checker/1.png" alt="Screenshot 1" class="screenshot width1" />
+                </div>
+                <h4>Features</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Add one .cs file to your project, type two lines of code to get a fully functional version checker</li>
+                  <li>Add a date, (release) notes, a url and more to releases and updates</li>
+                  <li>This project is open source. You can view, change and contribute to the source code on GitHub</li>
+                </ul>
+                <h4>Technologies</h4>
+                <ul class="indented-list bulleted-list">
+                  <li>Language: C#</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </section>
+  </main>
+</body>
 
-  
-  </body>
 </html>
-
