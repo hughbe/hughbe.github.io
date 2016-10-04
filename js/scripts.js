@@ -1,22 +1,27 @@
 $(function() {
+  var minHoverWidth = 800;
   $('.side-navigation-item').hover(function(e) {
-    $('.side-navigation-item').each(function() {
-      if ($(this).text().startsWith("> ")) {
-        $(this).text($(this).text().substring(1));
+    if (window.innerWidth > minHoverWidth) {
+      $('.side-navigation-item').each(function() {
+        if ($(this).text().startsWith("> ") && !$(this).hasClass("selected")) {
+          $(this).text($(this).text().substring(1));
+        }
+      });
+      if (!$(this).text().startsWith("> ")) {
+        $(this).text("> " + $(this).text());
       }
-    });
-    if (!$(this).text().startsWith("> ")) {
-      $(this).text("> " + $(this).text());
     }
   }, function() {
     $('.side-navigation-item').each(function() {
-      var hasPrefix = $(this).text().startsWith("> ");
-      var isSelected = $(this).hasClass("selected");
+      if (window.innerWidth > minHoverWidth) {
+        var hasPrefix = $(this).text().startsWith("> ");
+        var isSelected = $(this).hasClass("selected");
 
-      if (isSelected && !hasPrefix) {
-        $(this).text(">" + $(this).text());
-      } else if (!isSelected && hasPrefix) {
-        $(this).text($(this).text().substring(1));
+        if (isSelected && !hasPrefix) {
+          $(this).text(">" + $(this).text());
+        } else if (!isSelected && hasPrefix) {
+          $(this).text($(this).text().substring(1));
+        }
       }
     });
   });

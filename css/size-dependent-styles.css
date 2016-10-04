@@ -53,6 +53,10 @@
         display: inline-block;
     }
 
+    .side-navigation-bar a:hover {
+      font-weight: bolder;
+    }
+
     .side-navigation-bar a {
         padding: 0.5em 0.5em;
     }
