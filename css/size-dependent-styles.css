@@ -1,3 +1,13 @@
+@media screen and (max-width: 590px) {
+    .resume-photo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        min-width: 80% !important;
+        max-width: 80% !important;
+    }
+}
+
 @media screen and (max-width: 600px) {
     * {
         font-size: 100%;
@@ -11,8 +21,13 @@
         margin: 0 auto;
         padding-bottom: 0.25em;
     }
+
     .side-navigation-bar {
         font-size: 1em !important;
+    }
+
+    .navigation-bar {
+        font-size: 90%;
     }
 }
 @media screen and (max-width: 750px) {
