@@ -42,9 +42,11 @@
         float: none;
         position: static;
         border-top: 2px solid #100;
+        border-right: 0;
         text-align: center;
         font-size: 1em;
     }
+
     .side-navigation-bar a,
     .side-navigation-bar li,
     .side-navigation-bar h2 {
@@ -62,8 +64,6 @@
         margin-left: 0;
     }
     .box {
-        min-width: 95%;
-        max-width: 95%;
         width: auto !important;
         margin: 0.5em 0 !important;
     }
