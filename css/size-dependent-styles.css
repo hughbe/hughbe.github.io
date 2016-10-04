@@ -1,13 +1,13 @@
-@media screen and (max-width: 590px) {
-    .resume-photo {
-        float: none;
-        margin: 0 auto;
+@media screen and (max-width: 3px) {
+    .navigation-items li {
         display: block;
-        min-width: 80% !important;
-        max-width: 80% !important;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .navigation-items li {
+        padding: 0.25em;
+    }
+}
 @media screen and (max-width: 600px) {
     * {
         font-size: 100%;
@@ -21,13 +21,19 @@
         margin: 0 auto;
         padding-bottom: 0.25em;
     }
-
-    .side-navigation-bar {
-        font-size: 1em !important;
+    .resume-photo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        width: 80% !important;
     }
-
-    .navigation-bar {
-        font-size: 90%;
+    .side-navigation-bar {
+        font-size: 100% !important;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .side-navigation-bar {
+        font-size: 80% !important;
     }
 }
 @media screen and (max-width: 750px) {
@@ -44,23 +50,19 @@
         border-top: 2px solid #100;
         border-right: 0;
         text-align: center;
-        font-size: 1em;
+        font-size: 90%;
     }
-
     .side-navigation-bar a,
     .side-navigation-bar li,
     .side-navigation-bar h2 {
         display: inline-block;
     }
-
     .side-navigation-bar a:hover {
-      font-weight: bolder;
+        font-weight: bolder;
     }
-
     .side-navigation-bar a {
         padding: 0.5em 0.5em;
     }
-
     .side-navigation-items li:first-child {
         border-top: 0;
     }
@@ -74,8 +76,10 @@
 }
 @media screen and (max-width: 90em) {
     .resume-photo {
-        min-width: 50%;
-        max-width: 50%;
+        width: 50%;
+    }
+    .indented-list {
+        padding-left: 0.5em;
     }
 }
 @media screen and (max-width: 100em) {
