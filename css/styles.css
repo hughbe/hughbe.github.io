@@ -83,8 +83,7 @@ li {
 .column-title {
     font-size: 100%;
     display: inline-block;
-    padding-right: 0.75em;
-    min-width: 12%;
+    padding-right: 0.25em;
 }
 .column-text {
     display: inline;
