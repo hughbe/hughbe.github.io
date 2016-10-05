@@ -29,6 +29,9 @@ body {
     top: 0;
     bottom: 0;
 }
+.side-navigation-items.full-height li:first-child {
+    border-top: 0;
+}
 .side-navigation-items li:first-child {
     border-top: 2px solid #100;
 }
