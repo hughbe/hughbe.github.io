@@ -42,6 +42,11 @@
         width: 55%;
     }
 }
+@media screen and (min-width: 800px) {
+    .side-navigation-bar.full-width {
+        heigth: 100% !important;
+    }
+}
 @media screen and (max-width: 800px) {
     .side-navigation-bar {
         width: 100%;
@@ -52,6 +57,10 @@
         border-right: 0;
         text-align: center;
         font-size: 90%;
+    }
+    .side-navigation-bar.full-height {
+        position: static;
+        bottom: unset;
     }
     .side-navigation-bar a,
     .side-navigation-bar li,
