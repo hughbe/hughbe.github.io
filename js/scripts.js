@@ -101,6 +101,7 @@ $(window).load(function () {
   var windowObject = $(window);
   var sideNavBar = $(".side-navigation-bar");
   var navigationBar = $(".navigation-bar");
+  var main = $(".main");
   windowObject.scroll(function() {
     layout();
   });
@@ -111,11 +112,14 @@ $(window).load(function () {
     if(windowObject.scrollTop() > navigationBar.height()) {
       if (window.innerWidth > minHoverWidth) {
         sideNavBar.addClass("full-height");
+        main.css("margin-top", 0);
       } else {
         sideNavBar.addClass("full-width");
+        main.css("margin-top", sideNavBar.height() + 7);
       }
     } else {
       sideNavBar.attr("class", "side-navigation-bar");
+      main.css("margin-top", 0);
     }
   }
 });

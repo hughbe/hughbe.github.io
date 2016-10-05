@@ -44,7 +44,7 @@
 }
 @media screen and (min-width: 800px) {
     .side-navigation-bar.full-width {
-        heigth: 100% !important;
+        height: : 100% !important;
     }
 }
 @media screen and (max-width: 800px) {
