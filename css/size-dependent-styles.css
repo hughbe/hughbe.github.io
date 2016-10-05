@@ -82,6 +82,7 @@
     .box {
         width: auto !important;
         margin: 0.5em 0 !important;
+        float: none !important;
     }
 }
 @media screen and (max-width: 90em) {
