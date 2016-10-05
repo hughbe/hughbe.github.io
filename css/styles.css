@@ -17,8 +17,14 @@ body {
     float: left;
     height: 100%;
     border-right: 2px solid #000;
+    transform: translateZ(0);
 }
-.full-size {
+.side-navigation-bar.full-width {
+    position: fixed;
+    top: 0;
+    height: auto;
+}
+.side-navigation-bar.full-height {
     position: fixed;
     top: 0;
     bottom: 0;
