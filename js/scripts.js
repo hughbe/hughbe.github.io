@@ -100,10 +100,15 @@ $(function() {
 $(window).load(function () {
   var windowObject = $(window);
   var sideNavBar = $(".side-navigation-bar");
+  var navigationBar = $(".navigation-bar");
   windowObject.scroll(function() {
-    var aTop = $('.navigation-bar').height();
-    var scrollTop = windowObject.scrollTop();
-    if(scrollTop > aTop) {
+    layout();
+  });
+
+  layout();
+
+  function layout() {
+    if(windowObject.scrollTop() > navigationBar.height()) {
       if (window.innerWidth > minHoverWidth) {
         sideNavBar.addClass("full-height");
       } else {
@@ -112,5 +117,5 @@ $(window).load(function () {
     } else {
       sideNavBar.attr("class", "side-navigation-bar");
     }
-  });
+  }
 });
