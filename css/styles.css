@@ -180,10 +180,7 @@ hr {
 }
 .bulleted-list li {
     list-style-type: square;
-    list-style-position: inside;
-}
-.bulleted-list li span {
-    margin-left: -1em;
+    margin-left: 1em;
 }
 .content-list li {
     padding: 0.5em 0em;
