@@ -18,3 +18,7 @@
 strong {
   font-weight: bold;
 }
+
+.blogpost-short-href {
+  border-bottom: 0 !important;
+}

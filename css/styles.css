@@ -16,6 +16,7 @@ code {
     border: 1px solid #d3d3d3;
     padding: 1em;
     margin: 1em;
+    font-family: Hack, consolas;
 }
 .side-navigation-bar {
     background-color: #203f47;
@@ -225,7 +226,4 @@ hr {
 }
 .info h3 {
     padding-bottom: 0.25em;
-}
-.blogpost-short-href {
-	border-bottom: 0 !important;
 }
