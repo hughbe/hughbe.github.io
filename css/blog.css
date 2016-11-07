@@ -2,6 +2,10 @@
   font-size: 80%;
 }
 
+.blogpost-content p{
+  padding: 0.25em 0em;
+}
+
 .blogpost-header {
   overflow: hidden;
 }

@@ -62,13 +62,14 @@
             <div class="blogpost-content">
               <p>Microsoft recently announced <a href="https://msdn.microsoft.com/en-gb/commandline/wsl/about">Bash on Ubuntu on Windows:</a> now you can compile and run the <a href="https://github.com/apple/swift">Swift compiler</a> on Windows 10.</p>
               <p>Note that all compiled Swift binaries are only executable within Bash on Windows and are Ubunutu, not Windows, executables.</p>
-              <p>If you have any comments, feedback or questions, tweet me <a href="https://twitter.com/bellamy_hugh">@bellamy_hugh</a></p>
+              <p>Make sure to run all commands from Bash, or the project won't compile.</p>
+              <p>If you have any comments, feedback or questions, tweet me <a href="https://twitter.com/bellamy_hugh">@bellamy_hugh.</a></p>
 
               <h2>Setup your box</h2>
               <ol>
                 <li>Install Windows Subsystem for Linux <a href="https://msdn.microsoft.com/commandline/wsl/install_guide">here</a> and restart your PC.</li>
-                <li>Follow the instructions for setting up Bash on Windows <code>bash</code></li>
-                <li>Install the developer dependencies needed to compile the Swift project. <code>sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config libblocksruntime-dev libcurl4-openssl-dev</code></li>
+                <li>Follow the instructions for setting up Bash on Windows.<code>bash</code></li>
+                <li>Install the developer dependencies needed to compile the Swift project.<code>sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config libblocksruntime-dev libcurl4-openssl-dev</code></li>
                 <li>Install a version of clang with C++ 14 support - the default version of clang on WSL results in linker errors during compilation.
                   <code>sudo apt-get install clang-3.6<br/>
                   sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-3.6 100<br/>
@@ -79,14 +80,18 @@
                   tar xf cmake-3.5.2.tar.gz<br/>
                   cd cmake-3.5.2<br/>
                   ./configure<br/>
-                  make</code>
+                  make<br/>
+                  sudo make install<br/>
+                  sudo update-alternatives --install /usr/bin/cmake cmake /usr/local/bin/cmake 1 --force<br/>
+                  cmake --version # This should print 3.5.2
+                  </code>
                 </li>
               </ol>
 
               <h2>Get the code</h2>
               <ol>
                 <li>Open a command prompt in the directory where you want to contain the swift project.</li>
-                <li>Create a directory to contain the swift project and its dependencies
+                <li>Create a directory to contain the swift project and its dependencies. This may take up to 5 minutes.
                   <code>mkdir swift-source<br/>
                   cd swift-source</code>
                 </li>
@@ -105,14 +110,14 @@
 
               <h2>Compile some Swift code!</h2>
               <ol>
-                <li>Navigate to the built Swift binaries, typically found at <code>build\Ninja-RelWithDebInfoAssert\swift-linux-x86_64\bin</code></li>
-                <li>Create a file with some Swift code
+                <li>Navigate to the built Swift binaries. This may depend on your build configuration.<code>build\Ninja-RelWithDebInfoAssert\swift-linux-x86_64\bin</code></li>
+                <li>Create a file with some Swift code. This can be done from the command line in WSL or from Explorer in Windows.
                   <code>vim<br/>
                   print("Hello World")<br/>
                   save test.swift
                   </code>
-                <li>Compile the Swift code: <code>./swiftc test.swift</code></li>
-                <li>Run the Swift binary: <code>./test</code></li>
+                <li>Compile the Swift code from WSL.<code>./swiftc test.swift</code></li>
+                <li>Run the Swift binary!<code>./test</code></li>
               </ol>
             </div>
           </div>
