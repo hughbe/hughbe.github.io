@@ -39,79 +39,146 @@
         <ul class="side-navigation-items">
           <li>
             <h2>
-              <a href="#corefx-analysis" id="corefx-analysis-item" class="side-navigation-item default-item">Contributing to Corefx</a>
+              <a href="#swift-wsl" id="swift-wsl-item" class="side-navigation-item default-item">Compiling Swift on Windows (Subsystem for Linux)</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="#corefx-analysis" id="corefx-analysis-item" class="side-navigation-item">Contributing to Corefx</a>
             </h2>
           </li>
         </ul>
       </section>
       <section class="main">
         <section id="posts-section">
-          <ul class="content-list">
-            <div class="blogpost-short default-section hidden-section" id="corefx-analysis-section">
-              <div class="blogpost-header">
-                <h2 class="blogpost-short-title">
-                  <a class="blogpost-short-href" href="#corefx-analysis">Contributing to Corefx</a>
-                </h2>
-                <h3 class="blogpost-short-date">18/03/2016</h3>
-              </div>
-              <div class="blogpost-content">
-                <p>I've recently been an active contributor to the <a href="https://github.com/dotnet/corefx">corefx</a>project on GitHub.</p>
-                <p>In this blog post, I will assess my experience of contributing to the project, and consider ways to improve how corefx and similar large Microsoft projects work as OSS.</p>
-                <h2>The Good</h2>
-                <ul>
-                  <li>
-                    <strong>GitHub issues:</strong>
-                  </li>
-                  <p>Members of the corefx team use GitHub as an open issue tracker. This yield a variety of benefits.</p>
-                  <p>Firstly, issues can be tracked easily and directly from within PRs. Secondly, contributors can easily find areas to work on. This is vastly helped by GitHub's tagging system: I can find an issue marked <em>up-for-grabs</em>to find potential contributions, for example.</p>
-                  <li>
-                    <strong>Pull Requests:</strong>
-                  </li>
-                  <p>Across most .NET Foundation projects, including corefx, coreclr and roslyn, all contributors, including internal Microsoft employees, have to submit PRs, instead of directly submitting code. Although this decreases the number of code changes to the project, it has the following benefits.</p>
-                  <p>Firstly, it treats internal and external contributors the same way. This leads to more external contributors, and provides more transparency exposing the design decisions of Microsoft employees.</p>
-                  <p>Secondly, it improves code quality. Nits are spotted and fixed in code-review, and even external contributors can review code as well.</p>
-                  <p>Thirdly, it is accountable. PRs can be referenced, instead of individual commits, linking together commits and code decisions.</p>
-                  <li>
-                    <strong>Continuous Integration:</strong>
-                  </li>
-                  <p>All PRs are tested on all supported platforms on which corefx runs. When the CI is up (downtime can be high), this works like a dream, as contributors don't have to test their code on many platforms, and .NET Foundation members don't have to worry about the build breaking. This is better than other OSS such as <a href="https://github.com/apple/swift">apple/swift</a>that relies on employees manually triggering CI builds, and the external contributor having to test code on both Linux and OSX.</p>
-                </ul>
-                <h2>The Bad</h2>
-                <ul>
-                  <li>
-                    <strong>Ungrateful code merging</strong>
-                  </li>
-                  <p>In the hustle and bustle of working at Microsoft, many of my PRs (of all sizes) are merged with only a "LGTM" once the CI passes. This can lead to a feeling of lack of recognition of the work you spent time on.</p>
-                  <li>
-                    <strong>Lack of interaction between internal and external contributors</strong>
-                  </li>
-                  <p>It feels as if there is a split between Microsoft and non-Microsoft employees. This can arise from employees not interacting with external contributors in terms of answering questions or using unfamiliar vocab, or the team not being transparent about the corefx roadmap.</p>
-                </ul>
-                <h2>Solutions</h2>
-                <ul>
-                  <li>
-                    <strong>Say thanks!</strong>
-                  </li>
-                  <p>Microsoft should be grateful for external contributions. Code reviewers should not sign a review off with a "LGTM", but also a really short "thanks" and an encouragement for future contributions. Other examples include code reviewers being more polite and receptive during code-review.</p>
-                  <li>
-                    <strong>Suggest further work</strong>
-                  </li>
-                  <p>Employees should mark more issues as <em>up-for-grabs</em>, as this encourages contributions for work the Microsoft team would otherwise not be able to do. Furthermore, code reviewers could suggest areas for further research, and suggest other similar ways that contributors can contribute after the PR is merged.</p>
-                  <li>
-                    <strong>Interact more</strong>
-                  </li>
-                  <p>I understand that Microsoft employees are not paid to talk to random people online, but they should be more interactive with external contributors. Recently, I asked a question to an employee, and it went ignored. Try to answer more questions asked by members of the open-source community, as this encourages worthwhile discussion and contributions.</p>
-                  <li>
-                    <strong>Acknowledge PRs</strong>
-                  </li>
-                  <p>Again, Microsoft employees are busy, and in some circumstances, I have overloaded them with PRs. That said, it would be nice to know that some of my PRs are not forgotten. For example, a comment saying <em>Thanks for the contribution! We'll take a look at this in X days</em>would really be appreciated.</p>
-                </ul>
-                <h2>Conclusion</h2>
-                <p>That brings me to the end of an analysis that I hope did not come across too ranty. Corefx is a great project, and is very well managed. However, the business of being employed by Microsoft can lead to some problems in lack of interactivity, and speedy, potentially ungrateful-seeming code reviews. These minor nitpicks can be fixed, however, and although slightly harm the experience of contributing to corefx, I intend to keep contributing.</p>
-                </div>
-              <br />
+          <div class="blogpost-short default-section hidden-section" id="swift-wsl-section">
+            <div class="blogpost-header">
+              <h2 class="blogpost-short-title">
+                <a class="blogpost-short-href" href="#swift-wsl">Compiling Swift on Windows (Subsystem for Linux)</a>
+              </h2>
+              <h3 class="blogpost-short-date">07/11/2016</h3>
             </div>
-          </ul>
+            <div class="blogpost-content">
+              <p>Microsoft recently announced <a href="https://msdn.microsoft.com/en-gb/commandline/wsl/about">Bash on Ubuntu on Windows:</a> now you can compile and run the <a href="https://github.com/apple/swift">Swift compiler</a> on Windows 10.</p>
+              <p>Note that all compiled Swift binaries are only executable within Bash on Windows and are Ubunutu, not Windows, executables.</p>
+
+              <h2>Setup your box</h2>
+              <ol>
+                <li>Install Windows Subsystem for Linux <a href="https://msdn.microsoft.com/commandline/wsl/install_guide">here</a> and restart your PC.</li>
+                <li>Follow the instructions for setting up Bash on Windows <code>bash</code></li>
+                <li>Install the developer dependencies needed to compile the Swift project. <code>sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config libblocksruntime-dev libcurl4-openssl-dev</code></li>
+                <li>Install a version of clang with C++ 14 support - the default version of clang on WSL results in linker errors during compilation.
+                  <code>sudo apt-get install clang-3.6<br/>
+                  sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-3.6 100<br/>
+                  sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.6 100</code>
+                </li>
+                <li>Install the latest version of CMake - the version of CMake on WSL is too old and cannot compile the Swift project. This may take up to 30 minutes.
+                  <code>wget http://www.cmake.org/files/v3.5/cmake-3.5.2.tar.gz<br/>
+                  tar xf cmake-3.5.2.tar.gz<br/>
+                  cd cmake-3.5.2<br/>
+                  ./configure<br/>
+                  make</code>
+                </li>
+              </ol>
+
+              <h2>Get the code</h2>
+              <ol>
+                <li>Open a command prompt in the directory where you want to contain the swift project.</li>
+                <li>Create a directory to contain the swift project and its dependencies
+                  <code>mkdir swift-source<br/>
+                  cd swift-source</code>
+                </li>
+                <li>Clone the Swift source code. This may take up to 15 minutes.
+                  <code>git clone https://github.com/apple/swift.git<br/>
+                  ./swift/utils/update-checkout --clone</code>
+                </li>
+              </ol>
+
+              <h2>Build the code</h2>
+              <ol>
+                <li>Compile the Swift compiler and standard library - this takes between 30 minutes and 2 hours depending on your PC.
+                  <code>./swift/utils/build-script -r</code>
+                </li>
+              </ol>
+
+              <h2>Compile Swift!</h2>
+              <ol>
+                <li>Navigate to the built Swift binaries, typically found at <code>build\Ninja-RelWithDebInfoAssert\swift-linux-x86_64\bin</code></li>
+                <li>Create a file with some Swift code
+                  <code>vim<br/>
+                  print("Hello World")<br/>
+                  save test.swift
+                  </code>
+                <li>Compile the Swift code: <code>./swiftc test.swift</code></li>
+                <li>Run the Swift binary: <code>./test</code></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="blogpost-short hidden-section" id="corefx-analysis-section">
+            <div class="blogpost-header">
+              <h2 class="blogpost-short-title">
+                <a class="blogpost-short-href" href="#corefx-analysis">Contributing to Corefx</a>
+              </h2>
+              <h3 class="blogpost-short-date">18/03/2016</h3>
+            </div>
+            <div class="blogpost-content">
+              <p>I've recently been an active contributor to the <a href="https://github.com/dotnet/corefx">corefx</a>project on GitHub.</p>
+              <p>In this blog post, I will assess my experience of contributing to the project, and consider ways to improve how corefx and similar large Microsoft projects work as OSS.</p>
+              <h2>The Good</h2>
+              <ul>
+                <li>
+                  <strong>GitHub issues:</strong>
+                </li>
+                <p>Members of the corefx team use GitHub as an open issue tracker. This yield a variety of benefits.</p>
+                <p>Firstly, issues can be tracked easily and directly from within PRs. Secondly, contributors can easily find areas to work on. This is vastly helped by GitHub's tagging system: I can find an issue marked <em>up-for-grabs</em> to find potential contributions, for example.</p>
+                <li>
+                  <strong>Pull Requests:</strong>
+                </li>
+                <p>Across most .NET Foundation projects, including corefx, coreclr and roslyn, all contributors, including internal Microsoft employees, have to submit PRs, instead of directly submitting code. Although this decreases the number of code changes to the project, it has the following benefits.</p>
+                <p>Firstly, it treats internal and external contributors the same way. This leads to more external contributors, and provides more transparency exposing the design decisions of Microsoft employees.</p>
+                <p>Secondly, it improves code quality. Nits are spotted and fixed in code-review, and even external contributors can review code as well.</p>
+                <p>Thirdly, it is accountable. PRs can be referenced, instead of individual commits, linking together commits and code decisions.</p>
+                <li>
+                  <strong>Continuous Integration:</strong>
+                </li>
+                <p>All PRs are tested on all supported platforms on which corefx runs. When the CI is up (downtime can be high), this works like a dream, as contributors don't have to test their code on many platforms, and .NET Foundation members don't have to worry about the build breaking. This is better than other OSS such as <a href="https://github.com/apple/swift">apple/swift</a>that relies on employees manually triggering CI builds, and the external contributor having to test code on both Linux and OSX.</p>
+              </ul>
+              <h2>The Bad</h2>
+              <ul>
+                <li>
+                  <strong>Ungrateful code merging</strong>
+                </li>
+                <p>In the hustle and bustle of working at Microsoft, many of my PRs (of all sizes) are merged with only a "LGTM" once the CI passes. This can lead to a feeling of lack of recognition of the work you spent time on.</p>
+                <li>
+                  <strong>Lack of interaction between internal and external contributors</strong>
+                </li>
+                <p>It feels as if there is a split between Microsoft and non-Microsoft employees. This can arise from employees not interacting with external contributors in terms of answering questions or using unfamiliar vocab, or the team not being transparent about the corefx roadmap.</p>
+              </ul>
+              <h2>Solutions</h2>
+              <ul>
+                <li>
+                  <strong>Say thanks!</strong>
+                </li>
+                <p>Microsoft should be grateful for external contributions. Code reviewers should not sign a review off with a "LGTM", but also a really short "thanks" and an encouragement for future contributions. Other examples include code reviewers being more polite and receptive during code-review.</p>
+                <li>
+                  <strong>Suggest further work</strong>
+                </li>
+                <p>Employees should mark more issues as <em>up-for-grabs</em>, as this encourages contributions for work the Microsoft team would otherwise not be able to do. Furthermore, code reviewers could suggest areas for further research, and suggest other similar ways that contributors can contribute after the PR is merged.</p>
+                <li>
+                  <strong>Interact more</strong>
+                </li>
+                <p>I understand that Microsoft employees are not paid to talk to random people online, but they should be more interactive with external contributors. Recently, I asked a question to an employee, and it went ignored. Try to answer more questions asked by members of the open-source community, as this encourages worthwhile discussion and contributions.</p>
+                <li>
+                  <strong>Acknowledge PRs</strong>
+                </li>
+                <p>Again, Microsoft employees are busy, and in some circumstances, I have overloaded them with PRs. That said, it would be nice to know that some of my PRs are not forgotten. For example, a comment saying <em>Thanks for the contribution! We'll take a look at this in X days</em>would really be appreciated.</p>
+              </ul>
+              <h2>Conclusion</h2>
+              <p>That brings me to the end of an analysis that I hope did not come across too ranty. Corefx is a great project, and is very well managed. However, the business of being employed by Microsoft can lead to some problems in lack of interactivity, and speedy, potentially ungrateful-seeming code reviews. These minor nitpicks can be fixed, however, and although slightly harm the experience of contributing to corefx, I intend to keep contributing.</p>
+              </div>
+            <br />
+          </div>
         </section>
         <hr />
       </section>

@@ -9,6 +9,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
 }
+code {
+    display: block;
+    background-color: #f7f7f7;
+    border-radius: 7.5px;
+    border: 1px solid #d3d3d3;
+    padding: 1em;
+    margin: 1em;
+}
 .side-navigation-bar {
     background-color: #203f47;
     color: white;
@@ -85,9 +93,15 @@ body {
 .column {
     padding-bottom: 0.5em;
 }
-li {
+ul li {
     list-style: none;
+}
+li {
     padding: 0.1em 0em;
+}
+ol {
+    margin-left: 1em;
+    padding-left: 1em;
 }
 .column-title {
     font-size: 100%;
@@ -211,4 +225,7 @@ hr {
 }
 .info h3 {
     padding-bottom: 0.25em;
+}
+.blogpost-short-href {
+	border-bottom: 0 !important;
 }
