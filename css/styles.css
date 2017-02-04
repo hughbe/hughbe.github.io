@@ -190,8 +190,14 @@ hr {
 .indented-list {
     padding-left: 0.75em;
 }
+.double-indented-list {
+    padding-left: 2.25em;
+}
 .content-list li .info-link {
     border-bottom: 0;
+}
+.bulleted-list {
+    padding-bottom: 0.3em;
 }
 .bulleted-list li {
     list-style-type: square;
