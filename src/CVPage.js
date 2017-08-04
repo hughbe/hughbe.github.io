@@ -135,7 +135,9 @@ export default class CVPage extends Component {
             </div>
           </CVSection>
           <CVSection title="Work/Internships">
-            {CV.work.map(work => <WorkSummary key={work.name} work={work} />)}
+            <div className="work-history">
+              {CV.work.map(work => <WorkSummary key={work.name} work={work} />)}
+            </div>
             <div className="work-referees">
               <h3>Referees</h3>
               <p><strong>Fabio Fabrizio:</strong> Head of Technology at SYZYGY</p>

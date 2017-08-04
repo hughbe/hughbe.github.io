@@ -3,7 +3,8 @@
 }
 
 .cv-page .sidebar-right {
-  margin: 1rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 
 .cv-page .select-list {
@@ -42,7 +43,7 @@
 
 .coding-apps,
 .coding-open-source,
-#Work-Internships-section {
+.work-history {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
