@@ -25,7 +25,7 @@
 }
 
 .select-list:not(.has-selection) li {
-  margin: 4.5rem;
+  margin: 3rem;
   min-width: 25%;
   max-width: 25%;
 }
@@ -67,4 +67,14 @@
 
 .select-list li a:hover {
   border: 0;
+}
+
+.select-list li {
+  display: flex;
+  align-items: center;
+}
+
+.select-list img {
+  margin-right: 1rem;
+  border-radius: 15px;
 }

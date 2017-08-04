@@ -20,6 +20,7 @@ const AppsPage = ({ match }) => {
       <SelectList
         selected={selectedApp && selectedApp.name}
         baseLink="/apps"
+        showImage
       >
       {Apps.map(app => app.name)}
       </SelectList>
