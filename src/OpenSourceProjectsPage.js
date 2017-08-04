@@ -1,6 +1,7 @@
 import React from 'react';
 import makeLink from './Utilities/MakeLink';
 import OpenSourceProjects from './Content/OpenSourceProjects';
+import Error404Page from './Error404Page';
 import FadeTransition from './Components/Common/FadeTransition';
 import SelectList from './Components/SelectList';
 import ProjectDisplay from './Components/ProjectDisplay';
@@ -10,6 +11,9 @@ const OpenSourceProjectsPage = ({ match }) => {
   const lowerProject = projectId && projectId.toLowerCase();
 
   const selectedProject = projectId && OpenSourceProjects.find(project => makeLink(project.name).toLowerCase() === lowerProject);
+  if (projectId && !selectedProject) {
+    return <Error404Page />;
+  }
 
   return (
     <main>
