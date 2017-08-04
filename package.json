@@ -2,8 +2,10 @@
   "name": "hughbellamy.co.uk",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hughbe.github.io",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "gh-pages": "^1.0.0",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -14,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
