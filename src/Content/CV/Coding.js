@@ -1,6 +1,4 @@
 const Coding = {
-  languages: 'C#, C, Swift, Objective C, Java, HTML, JavaScript, CSS PHP, MYSQL, Python, C++',
-  teaching: 'Online C# tutorials (30,000+ views), tutoring (app and web development)',
   apps: [
     {
       name: 'Homework Planner',
