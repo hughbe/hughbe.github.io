@@ -9,7 +9,7 @@ export default class WorkSummary extends Component {
       <div className="work-summary bordered-box">
         <div className="work-header">
           <h3 className="work-name">
-            <a className="dotted-link" href={work.url}>{work.name}</a>
+            <a href={work.url}>{work.name}</a>
           </h3>
           <div className="work-duration">{work.duration}</div>
         </div>

@@ -1,6 +1,6 @@
 const ClickBoard = {
   name: 'ClickBoard',
-  description: 'An app that converts your iPhone into a mouse and controller for your PC. Built as part of the Young Enterprise Scheme. The project website can be found here.',
+  description: 'An app that converts your iPhone into a mouse and controller for your PC. Built as part of the Young Enterprise Scheme. The project website can be found <a href="http://clickboardapp.co.uk">here.</a>',
   screenshots: 3,
   features: [
     'Connect to the same WiFi network and start using ClickBoard',

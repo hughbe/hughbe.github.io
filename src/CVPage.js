@@ -6,7 +6,7 @@ import AppSummary from './Components/AppSummary';
 import WorkSummary from './Components/WorkSummary';
 import './css/CVPage.css';
 
-const getSectionId = (title) => `${makeLink(title)}-section`;
+const getSectionId = (title) => `${makeLink(title.toLowerCase())}-section`;
 
 const CVSection = ({ id, title, children }) => {
   const sectionId = makeLink(id || title);

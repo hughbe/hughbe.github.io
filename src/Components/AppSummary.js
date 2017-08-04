@@ -7,12 +7,15 @@ const AppSummary = ({ app }) => (
   <div className="app-summary bordered-box">
     <div className="app-header">
       <h3 className="app-name">
-        <Link className="dotted-link" to={`/apps/${makeLink(app.name)}`}>{app.name}</Link>
+        <Link to={`/apps/${makeLink(app.name)}`}>{app.name}</Link>
       </h3>
       <p className="app-price">{app.price}</p>
     </div>
     <small className="app-category"><em>{app.category}</em></small>
-    <p className="app-description">{app.description}</p>
+    <p
+      className="app-description"
+      dangerouslySetInnerHTML={{__html: app.description}}
+    />
     <hr />
     <p className="app-downloads">{app.downloads} downloads</p>
     <p className="app-milestones">{app.milestones}</p>

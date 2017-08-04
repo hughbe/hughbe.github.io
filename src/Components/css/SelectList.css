@@ -63,5 +63,5 @@
 .select-list li a {
   color: #333;
   text-decoration: none;
-  text-align: center;
+  border: 0;
 }

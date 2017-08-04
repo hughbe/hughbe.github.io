@@ -1,0 +1,18 @@
+.home-page {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  min-height: 100%;
+  align-items: center !important;
+  justify-content: center;
+  text-align: center;
+  font-size: 150%;
+}
+
+.introduction {
+  font-size: 4rem;
+}
+
+.home-page a:not(:hover) {
+  border-bottom: 0;
+}

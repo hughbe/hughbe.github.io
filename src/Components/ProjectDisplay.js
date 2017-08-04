@@ -20,7 +20,9 @@ const ProjectDisplay = ({ project, ...rest }) => {
 
   return (
     <section {...rest}>
-      <ProjectDisplaySection id="metadata">{project.description}</ProjectDisplaySection>
+      <ProjectDisplaySection id="metadata">
+        <p dangerouslySetInnerHTML={{__html: project.description}} />
+      </ProjectDisplaySection>
       <ProjectDisplaySection id="screenshots">{screenshots}</ProjectDisplaySection>
       <ProjectDisplaySection title="Features" id="features">
         <SimpleList>{project.features}</SimpleList>

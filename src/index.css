@@ -1,8 +1,9 @@
-html, body, #root, #root > main {
+html, body, #root, #root > *, #root main {
   min-height: 100%;
+  height: 100%;
 }
 
-#root > main {
+#root > * > main {
   display: flex;
   align-items: flex-start;
 }
@@ -27,6 +28,8 @@ body {
 
 a[href] {
   color: #8b567e;
+  text-decoration: none;
+  border-bottom: 1px dotted #dc8ec9;
 }
 
 blockquote { 
@@ -57,9 +60,4 @@ ul {
 
 ul > li {
   margin-bottom: 0.5rem;
-}
-
-.dotted-link {
-  text-decoration: none;
-  border-bottom: 1px dotted #dc8ec9;
 }
