@@ -18,5 +18,6 @@
 }
 
 .navigation-bar a:hover {
+  border-bottom: 0;
   color: #CCC;
 }

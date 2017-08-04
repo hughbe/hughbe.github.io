@@ -63,5 +63,8 @@
 .select-list li a {
   color: #333;
   text-decoration: none;
+}
+
+.select-list li a:hover {
   border: 0;
 }
