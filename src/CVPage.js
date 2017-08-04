@@ -17,7 +17,7 @@ const CVSection = ({ id, title, children }) => {
       id={getSectionId(id || title)}
       className="cv-section"
     >
-      {title && <h2>{title}</h2>}
+      {title && <h2 className="cv-section-title"><span>{title}</span></h2>}
       {children}
     </section>
   );
@@ -73,11 +73,12 @@ export default class CVPage extends Component {
         return element.offsetTop + element.offsetHeight < top + window.innerHeight;
       }
     });
-    const finalElement = finalElements.pop();
-    
-    const sectionId = finalElement.getAttribute('data-section-id');
-    if (this.state.section !== sectionId) {
-      this.setState({section: sectionId});
+    const finalElement = finalElements.length > 0 && finalElements[finalElements.length - 1];
+    if (finalElement) {
+      const sectionId = finalElement.getAttribute('data-section-id');
+      if (this.state.section !== sectionId) {
+        this.setState({section: sectionId});
+      }
     }
   }
 
@@ -91,16 +92,11 @@ export default class CVPage extends Component {
         </SelectList>
         <section className="sidebar-right">
           <CVSection title="Hi." id="About">
-            <h3 className="introduction-text"><span>I'm Hugh. I'm a 19 year old student studying Politics, Philosophy and Economics at Oxford University. In my spare time I develop apps, hack on side projects and contribute to open source projects.</span></h3>
-            <h4>Here's some information about me:</h4>
-            <p>Date of Birth: 08/06/1998</p>
-            <p>Location: London</p>
-            <p>Nationality: UK Citizen</p>
-            <p>Email: <a href="mailto:hughbellars@gmail.com">hughbellars@gmail.com</a></p>
-            <p>Skype and Phone: <a href="mailto:hughbellars@gmail.com">please request</a></p>
+            <h3>I'm Hugh.</h3>
+            <p className="introduction-text"><span>I'm a 19 year old student studying Politics, Philosophy and Economics at Oxford University. In my spare time I develop apps, hack on side projects and contribute to open source projects.</span></p>
           </CVSection>
           <CVSection title="Coding">
-            <p>I self-taught programming aged 13, starting with C#. I soon moved onto iOS apps and now enjoy contributing to Open Source projects.</p>
+            <p>I self-taught programming aged 13, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
             <p>Languages: {CV.coding.languages}</p>
             <p>Teaching: {CV.coding.teaching}</p>
             <div className="coding-apps">
@@ -147,6 +143,13 @@ export default class CVPage extends Component {
             </div>
           </CVSection>
           <CVSection title="Personal">
+            <h4>Here's some information about me:</h4>
+            <p>Date of Birth: 08/06/1998</p>
+            <p>Location: London</p>
+            <p>Nationality: UK Citizen</p>
+            <p>Email: <a href="mailto:hughbellars@gmail.com">hughbellars@gmail.com</a></p>
+            <p>Skype and Phone: <a href="mailto:hughbellars@gmail.com">please request</a></p>
+
             <p><strong>Languages:</strong> {CV.personal.languages}</p>
             <p><strong>Travel:</strong> {CV.personal.travel}</p>
             <p><strong>Sport:</strong> {CV.personal.sport}</p>

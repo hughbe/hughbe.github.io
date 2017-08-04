@@ -1,10 +1,38 @@
 .cv-page {
-  margin: 1rem;
   font-size: 110%;
 }
 
+.cv-page .sidebar-right {
+  margin: 1rem;
+}
+
+.cv-page .select-list {
+  flex: 0 0 auto;
+  flex-shrink: 1;
+}
+
+@media (max-width: 768px) {
+  .cv-page {
+    flex-flow: column;
+  }
+
+  .cv-page .select-list {
+    padding: 0.25rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #444;
+  }
+
+  .select-list.has-selection li {
+    margin: 0.5rem;
+    flex: 0 0 auto;
+  }
+}
+
 .introduction-text > span {
-  background-color: #dc8ec9;
+  background-color: #F8CEDA;
 }
 
 .coding-apps {

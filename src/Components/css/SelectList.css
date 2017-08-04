@@ -4,7 +4,7 @@
   align-content: center;
   justify-content: center;
   flex: 0 0 75%;
-  margin: 0 auto;
+  margin: 1rem;
 }
 
 .select-list.has-selection {
@@ -19,11 +19,18 @@
 
 .select-list li {
   margin: 1.5rem;
-  font-size: x-large;
+  font-size: large;
+}
+
+@media (min-width: 768px) {
+  .select-list li {
+    margin: 1.5rem;
+    font-size: x-large;
+  }
 }
 
 .select-list:not(.has-selection) li {
-  margin: 3rem;
+  margin: 5%;
   flex: 0 0 25%;
 }
 
