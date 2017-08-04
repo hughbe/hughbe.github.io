@@ -42,11 +42,12 @@ export default class CVPage extends Component {
   }
 
   componentDidMount() {
-    let section = this.getSection(this.props);
-    let element = document.getElementById(getSectionId(section));
+    const section = this.getSection(this.props);
+    const element = document.getElementById(getSectionId(section));
+    const top = element.offsetTop - 10;
 
     window.addEventListener('scroll', this.handleScrolled);
-    window.$('html,body').animate({scrollTop: `${element.offsetTop}px`});
+    window.$('html,body').animate({scrollTop: `${top}px`});
   }
 
   componentWillUnmount() {
@@ -54,9 +55,8 @@ export default class CVPage extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const section = this.getSection(this.props);
-
-    if (section !== prevProps.match.params.section) {
+    if (this.props.match.params.section !== prevProps.match.params.section) {
+      const section = this.getSection(this.props);
       const element = document.getElementById(getSectionId(section));
 
       const top = element.offsetTop - 10;
@@ -91,7 +91,7 @@ export default class CVPage extends Component {
         </SelectList>
         <section className="sidebar-right">
           <CVSection title="Hi." id="About">
-            <h3 className="introduction-text"><span>I'm Hugh, a 19 year old student with an interest in technology, programming and economics.</span></h3>
+            <h3 className="introduction-text"><span>I'm Hugh. I'm a 19 year old student studying Politics, Philosophy and Economics at Oxford University. In my spare time I develop apps, hack on side projects and contribute to open source projects.</span></h3>
             <h4>Here's some information about me:</h4>
             <p>Date of Birth: 08/06/1998</p>
             <p>Location: London</p>
@@ -113,7 +113,7 @@ export default class CVPage extends Component {
                 <hr />
                 <p>Some projects I have contributed to include:</p>
                 <ul>
-                  <li>.NET Framework: installed on 1.5 billion devices. So far in 2016, I am one of the most active external contributor to the corefx project in terms of pull requests, commits and code changes.</li>
+                  <li>.NET Framework: installed on 1.5 billion devices. So far in 2016, I am one of the most active external contributor to the <a href="https://github.com/dotnet/corefx">corefx</a> project in terms of pull requests, commits and code changes.</li>
                   <li>15 other miscellaneous self-published projects, with over 125 stars on GitHub.</li>
                 </ul>
               </div>

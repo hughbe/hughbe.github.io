@@ -50,7 +50,7 @@ const Work = [
   {
     name: 'European Union',
     url: 'http://www.seio.gov.rs/',
-    duration: '11 week, October 2015',
+    duration: '1 week, October 2015',
     location: 'Belgrade, Serbia',
     description: '3 days at the EU delegation to Serbia in Belgrade. Researched my EPQ and discovered more about how the EU interacts with the Serbian government to meet requirements for EU membership.'
   }
