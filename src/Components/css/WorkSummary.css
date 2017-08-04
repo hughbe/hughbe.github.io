@@ -1,0 +1,20 @@
+.work-summary {
+  padding: 1rem;
+}
+
+.work-summary .work-header {
+  display: flex;
+  flex-flow: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.work-summary .work-name {
+  margin-right: 0.5rem;
+}
+
+.work-summary .work-name,
+.work-summary .work-duration {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}

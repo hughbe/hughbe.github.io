@@ -1,0 +1,13 @@
+.error-404 {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  font-size: 150%;
+}
+
+.sad-face {
+  font-size: 300%;
+  transform: rotate(90deg);
+  display: inline-block;
+}

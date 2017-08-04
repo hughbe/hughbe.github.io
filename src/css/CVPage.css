@@ -1,0 +1,37 @@
+.cv-page {
+  margin: 1rem;
+  font-size: 110%;
+}
+
+.coding-apps {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.coding-apps,
+.coding-open-source,
+#Work-Internships-section {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.bordered-box {
+  padding: 1rem;
+  border: 1px dotted #444;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+.bordered-box hr {
+  margin: 0 -1rem;
+}
+
+.academic-result {
+  display: block;
+  padding-top: 0.25rem;
+  margin-left: 1rem;
+}
+
+.work-referees > p {
+  margin-left: 0.75rem;
+}

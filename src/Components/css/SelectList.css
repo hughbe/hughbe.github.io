@@ -1,0 +1,67 @@
+.select-list {
+  min-width: 25%;
+  max-width: 25%;
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+}
+
+.select-list,
+.select-list li {
+  transition: all 1s;
+}
+
+@media (min-width: 768px) {
+  .select-list:not(.has-selection) {
+    min-width: 75%;
+    max-width: 75%;
+    margin-left: 12.5vw;
+  }
+}
+
+.select-list:not(.has-selection) li {
+  margin: 4.5rem;
+}
+
+.select-list.has-selection li {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.select-list li {
+  min-width: 25%;
+  max-width: 25%;
+  margin: 1.5rem;
+  font-size: x-large;
+}
+
+.select-list li a {
+  position: relative;
+}
+
+.select-list li a:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  background: #d472bc;
+  transition: all 0.25s linear;
+  width: 0;
+  left: 0px;
+  bottom: -3px;
+}
+
+.select-list.has-selection li a:after {
+  left: 100%;
+}
+
+.select-list li.selected a:after,
+.select-list:not(.has-selection) li:hover a:after {
+  width: 100%;
+  left: 0;
+}
+
+.select-list li a {
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
