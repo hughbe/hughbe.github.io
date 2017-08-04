@@ -1,9 +1,13 @@
-html, body, #root, #root > *, #root main {
-  min-height: 100%;
-  height: 100%;
+html, body, #root, *[data-reactroot] {
+  min-height: 100vh;
 }
 
-#root > * > main {
+*[data-reactroot] {
+  display: flex;
+  flex-direction: column;
+}
+
+#root main {
   display: flex;
   align-items: flex-start;
 }
@@ -29,6 +33,9 @@ body {
 a[href] {
   color: #8b567e;
   text-decoration: none;
+}
+
+a[href]:hover {
   border-bottom: 1px dotted #dc8ec9;
 }
 
