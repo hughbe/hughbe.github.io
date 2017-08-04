@@ -1,9 +1,11 @@
 .select-list {
-  min-width: 25%;
-  max-width: 25%;
   display: flex;
   flex-flow: wrap;
   align-content: center;
+}
+
+.select-list.has-selection {
+  flex: 0 0 25%;
 }
 
 .select-list,
@@ -13,26 +15,24 @@
 
 @media (min-width: 768px) {
   .select-list:not(.has-selection) {
-    min-width: 75%;
-    max-width: 75%;
     margin-left: 12.5vw;
   }
 }
 
+.select-list li {
+  margin: 1.5rem;
+  font-size: x-large;
+}
+
 .select-list:not(.has-selection) li {
   margin: 4.5rem;
+  min-width: 25%;
+  max-width: 25%;
 }
 
 .select-list.has-selection li {
   min-width: 100%;
   max-width: 100%;
-}
-
-.select-list li {
-  min-width: 25%;
-  max-width: 25%;
-  margin: 1.5rem;
-  font-size: x-large;
 }
 
 .select-list li a {
