@@ -15,3 +15,12 @@
   opacity: 0.01;
   transition: opacity 250ms ease-in;
 }
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}

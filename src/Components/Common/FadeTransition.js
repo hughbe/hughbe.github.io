@@ -4,10 +4,12 @@ import './css/FadeTransition.css';
 
 const FadeTransition = ({ children, ...rest }) => (
   <CSSTransitionGroup
-    {...rest}
     transitionName="fade"
+    transitionAppearTimeout={1000}
     transitionEnterTimeout={300}
-    transitionLeaveTimeout={250}>
+    transitionLeaveTimeout={250}
+    {...rest}
+  >
     {children}
   </CSSTransitionGroup>
 );

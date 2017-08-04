@@ -2,6 +2,9 @@
   display: flex;
   flex-flow: wrap;
   align-content: center;
+  justify-content: center;
+  flex: 0 0 75%;
+  margin: 0 auto;
 }
 
 .select-list.has-selection {
@@ -9,14 +12,9 @@
 }
 
 .select-list,
-.select-list li {
+.select-list li,
+.select-list li img {
   transition: all 1s;
-}
-
-@media (min-width: 768px) {
-  .select-list:not(.has-selection) {
-    margin-left: 12.5vw;
-  }
 }
 
 .select-list li {
@@ -26,13 +24,11 @@
 
 .select-list:not(.has-selection) li {
   margin: 3rem;
-  min-width: 25%;
-  max-width: 25%;
+  flex: 0 0 25%;
 }
 
 .select-list.has-selection li {
-  min-width: 100%;
-  max-width: 100%;
+  flex: 0 0 100%;
 }
 
 .select-list li a {
@@ -75,6 +71,14 @@
 }
 
 .select-list img {
-  margin-right: 1rem;
+  margin: 0 0.75rem;
+  width: 75px;
+  height: 75px;
   border-radius: 15px;
+}
+
+.select-list.has-selection img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
