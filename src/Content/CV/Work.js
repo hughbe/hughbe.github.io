@@ -5,7 +5,12 @@ const Work = [
     duration: '6 months, February 2017 - August 2017',
     title: 'Intern',
     location: 'Phnom Penh, Cambodia',
-    description: 'Helping the startup program section of the NGO in Cambodia. Projects I am involved in include:'
+    description: `Helping the startup program section of the NGO in Cambodia. Projects I am involved in include:
+<ul>
+  <li><strong>AsiaChat:</strong> collecting and analysing Facebook posts in Cambodia and Laos on multiple political and media pages, to expand on viewpoints in civil society.</li>
+  <li><strong><a href="http://tekhub.co">TEKHUB:</a></strong> an incubator for social enterprise startups in technology.</li>
+  <li><strong>Bong Srey:</strong> developing and marketing, a job website for the 700,000 women in the Cambodian textile industry.</li>
+</ul>`
   },
   {
     name: 'SYZYGY',
@@ -13,7 +18,7 @@ const Work = [
     duration: '4 months, October 2016 - January 2017',
     title: 'Junior Developer',
     location: 'London, United Kingdom',
-    description: 'Backend development of milk delivery service Milk and More. Developed ASP.NET Core WebAPI responsible for customer data, managing and triggering deliveries and billing of subscriptions and addons.'
+    description: 'Backend development of milk delivery service <a href="https://milkman.co.uk">Milk and More</a>. Developed ASP.NET Core WebAPI responsible for customer data, managing and triggering deliveries and billing of subscriptions and addons.'
   },
   {
     name: 'Accenture',

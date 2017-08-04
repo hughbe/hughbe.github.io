@@ -49,3 +49,17 @@ blockquote p:not(:last-child) {
 *::selection {
   background-color: #dc8ec9;
 }
+
+ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+ul > li {
+  margin-bottom: 0.5rem;
+}
+
+.dotted-link {
+  text-decoration: none;
+  border-bottom: 1px dotted #dc8ec9;
+}

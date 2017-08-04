@@ -76,7 +76,9 @@ export default class CVPage extends Component {
     const finalElement = finalElements.pop();
     
     const sectionId = finalElement.getAttribute('data-section-id');
-    this.setState({section: sectionId});
+    if (this.state.section !== sectionId) {
+      this.setState({section: sectionId});
+    }
   }
 
   render() {
@@ -89,7 +91,7 @@ export default class CVPage extends Component {
         </SelectList>
         <section className="sidebar-right">
           <CVSection title="Hi." id="About">
-            <h3>I'm Hugh, a 19 year old student with an interest in technology, programming and economics.</h3>
+            <h3 className="introduction-text"><span>I'm Hugh, a 19 year old student with an interest in technology, programming and economics.</span></h3>
             <h4>Here's some information about me:</h4>
             <p>Date of Birth: 08/06/1998</p>
             <p>Location: London</p>
@@ -145,7 +147,10 @@ export default class CVPage extends Component {
             </div>
           </CVSection>
           <CVSection title="Personal">
-            <p>{'blah blah'.repeat(250)}</p>
+            <p><strong>Languages:</strong> {CV.personal.languages}</p>
+            <p><strong>Travel:</strong> {CV.personal.travel}</p>
+            <p><strong>Sport:</strong> {CV.personal.sport}</p>
+            <p><strong>Music:</strong> {CV.personal.music}</p>
           </CVSection>
         </section>
       </main>

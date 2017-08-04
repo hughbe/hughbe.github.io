@@ -9,12 +9,15 @@
   justify-content: space-between;
 }
 
-.work-summary .work-name {
+.work-summary .work-header:first {
   margin-right: 0.5rem;
 }
 
-.work-summary .work-name,
-.work-summary .work-duration {
-  margin-top: 0;
+.work-summary .work-header > * {
+  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.work-summary .work-description {
+  margin-top: 0.5rem;
 }

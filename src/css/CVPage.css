@@ -3,6 +3,10 @@
   font-size: 110%;
 }
 
+.introduction-text > span {
+  background-color: #dc8ec9;
+}
+
 .coding-apps {
   display: flex;
   flex-flow: wrap;
