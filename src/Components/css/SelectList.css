@@ -5,10 +5,23 @@
   justify-content: center;
   flex: 0 0 75%;
   margin: 1rem;
+  margin-bottom: 0;
 }
 
-.select-list.has-selection {
-  flex: 0 0 25%;
+@media (max-width: 500px) {
+  .select-list li {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 725px) {
+  .select-list {
+    margin-bottom: 1rem;
+  }
+
+  .select-list.has-selection {
+    flex: 0 0 25%;
+  }
 }
 
 .select-list,
@@ -22,9 +35,8 @@
   font-size: large;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .select-list li {
-    margin: 1.5rem;
     font-size: x-large;
   }
 }
