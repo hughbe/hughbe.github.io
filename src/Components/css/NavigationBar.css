@@ -3,10 +3,18 @@
   width: 100%;
   background-color: black;
   justify-content: space-between;
+  flex-flow: wrap;
+}
+
+@media (max-width: 500px) {
+  .navigation-bar {
+    justify-content: center;
+  }
 }
 
 .navigation-bar > div {
   display: flex;
+  flex-flow: wrap;
 }
 
 .navigation-bar a {
