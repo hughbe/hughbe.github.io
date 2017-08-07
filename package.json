@@ -2,7 +2,7 @@
   "name": "hughbellamy.co.uk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hughbe.github.io",
+  "homepage": "http://hughbellamy.co.uk",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "gh-pages": "^1.0.0",
