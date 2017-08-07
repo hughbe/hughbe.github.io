@@ -1,5 +1,6 @@
 const DayDatePicker = {
   name: 'Day Date Picker',
+  githubUrl: 'https://github.com/hughbe/day-date-picker',
   description: 'An open source drop in highly customizable date picker which displays the day of the week alongside the day number column written in Objective C for iOS.',
   screenshots: 2,
   features: [

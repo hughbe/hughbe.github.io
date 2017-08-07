@@ -1,5 +1,6 @@
 const HttpServer = {
   name: 'Http Server',
+  githubUrl: 'https://github.com/hughbe/http-server',
   description: 'An open source versatile local and remote HTTP web server written in C#.',
   screenshots: 1,
   features: [

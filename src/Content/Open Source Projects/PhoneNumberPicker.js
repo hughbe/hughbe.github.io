@@ -1,5 +1,6 @@
 const PhoneNumberPicker = {
   name: 'Phone Number Picker',
+  githubUrl: 'https://github.com/hughbe/phone-number-picker',
   description: 'An open source drop in phone number and country picker written in Swift for iOS. It is based off the WhatsApp account creation screen in terms of styling and functionality.',
   screenshots: 2,
   features: [

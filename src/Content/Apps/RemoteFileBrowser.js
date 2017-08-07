@@ -1,6 +1,6 @@
 const RemoteFileBrowser = {
   name: 'Remote File Browser',
-  url: 'https://itunes.apple.com/gb/app/remote-file-browser/id1002907027',
+  itunesUrl: 'https://itunes.apple.com/gb/app/remote-file-browser/id1002907027',
   description: 'An app that lets you browse, open and edit files and folders on your computer straight from your iOS device.',
   screenshots: 3,
   features: [

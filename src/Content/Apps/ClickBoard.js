@@ -1,6 +1,6 @@
 const ClickBoard = {
   name: 'ClickBoard',
-  url: 'https://itunes.apple.com/gb/app/clickboard/id938205392',
+  itunesUrl: 'https://itunes.apple.com/gb/app/clickboard/id938205392',
   description: 'An app that converts your iPhone into a mouse and controller for your PC. Built as part of the Young Enterprise Scheme. The project website can be found <a href="http://clickboardapp.co.uk">here.</a>',
   screenshots: 3,
   features: [

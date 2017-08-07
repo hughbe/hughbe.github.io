@@ -1,5 +1,6 @@
 const VersionChecker = {
   name: 'Version Checker',
+  githubUrl: 'https://github.com/hughbe/version-checker',
   description: 'An open source drop-in library, written in C#, that simplifies version checking for applications of all types.',
   screenshots: 1,
   features: [

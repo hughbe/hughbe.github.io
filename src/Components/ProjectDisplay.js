@@ -21,7 +21,19 @@ const ProjectDisplay = ({ project, ...rest }) => {
   return (
     <section {...rest}>
       <ProjectDisplaySection id="metadata">
-        <p dangerouslySetInnerHTML={{__html: project.description}} />
+        <div dangerouslySetInnerHTML={{__html: project.description}} />
+        <div className="selected-project-links">
+          {project.itunesUrl &&
+            <a href={project.itunesUrl}>
+              <img src={require('../Content/Logos/App Store.svg')} height="50" alt="iTunes" />
+            </a>
+          }
+          {project.githubUrl &&
+            <a href={project.githubUrl}>
+              <img src={require('../Content/Logos/GitHub.png')} height="50" alt="GitHub" />
+            </a>
+          }
+        </div>
       </ProjectDisplaySection>
       <ProjectDisplaySection id="screenshots">{screenshots}</ProjectDisplaySection>
       <ProjectDisplaySection title="Features" id="features">

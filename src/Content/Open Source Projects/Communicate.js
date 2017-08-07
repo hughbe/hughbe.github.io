@@ -1,5 +1,6 @@
 const Communicate = {
   name: 'Communicate',
+  githubUrl: 'https://github.com/hughbe/communicate',
   description: 'An open source cross-platform library that aims to make it easy to connect Windows, Mac OSX and iOS devices to each other and send data between devices simply, reliably and effectively.',
   screenshots: 1,
   features: [

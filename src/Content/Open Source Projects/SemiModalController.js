@@ -1,5 +1,6 @@
 const SemiModalController = {
   name: 'Semi Modal Controller',
+  githubUrl: 'https://github.com/hughbe/semi-modal-controller',
   description: 'An open source library, written in Objective C for iOS, that allows you to present a UIViewController semi-modally (over the current content). Designed in a modular way and with subclassing in mind, this library lets you present view controllers that you can slide, zoom, dismiss and subclass.',
   screenshots: 2,
   features: [

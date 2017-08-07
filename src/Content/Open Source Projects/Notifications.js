@@ -1,5 +1,6 @@
 const Notifications = {
   name: 'Notifications',
+  githubUrl: 'https://github.com/hughbe/notifications',
   description: 'A drop-in compilation of code files across platforms and programming languages that simplify posting notifications of various styles to the end user.',
   screenshots: 1,
   features: [
