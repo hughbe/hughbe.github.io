@@ -2,6 +2,7 @@
   margin: 1rem;
   margin-right: 2rem;
   font-size: 120%;
+  flex: 1
 }
 
 .selected-project-section {
