@@ -16,6 +16,10 @@
   margin: 1rem 0;
 }
 
+.selected-project .selected-project-links {
+  float: right;
+}
+
 .selected-project .selected-project-links a {
   margin: 0.5rem;
 }

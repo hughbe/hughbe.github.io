@@ -21,18 +21,27 @@ const ProjectDisplay = ({ project, ...rest }) => {
   return (
     <section {...rest}>
       <ProjectDisplaySection id="metadata">
-        <div dangerouslySetInnerHTML={{__html: project.description}} />
-        <div className="selected-project-links">
+        <div>
+          <span className="selected-project-links">
           {project.itunesUrl &&
             <a href={project.itunesUrl}>
-              <img src={require('../Content/Logos/App Store.svg')} height="50" alt="iTunes" />
+              <img
+                src={require('../Content/Logos/App Store.svg')}
+                height="50"
+                alt="iTunes" />
             </a>
           }
           {project.githubUrl &&
             <a href={project.githubUrl}>
-              <img src={require('../Content/Logos/GitHub.png')} height="50" alt="GitHub" />
+              <img
+                src={require('../Content/Logos/GitHub.png')}
+                height="50"
+                alt="GitHub"
+              />
             </a>
           }
+          </span>
+          <span dangerouslySetInnerHTML={{__html: project.description}} />
         </div>
       </ProjectDisplaySection>
       <ProjectDisplaySection id="screenshots">{screenshots}</ProjectDisplaySection>
@@ -53,7 +62,10 @@ const ProjectDisplay = ({ project, ...rest }) => {
         </ul>
       </ProjectDisplaySection>
       {project.installationInstructions &&
-      <ProjectDisplaySection title="Installation Instructions" id="installation-instructions">
+      <ProjectDisplaySection
+        title="Installation Instructions"
+        id="installation-instructions"
+      >
         <SimpleList>{project.installationInstructions}</SimpleList>
       </ProjectDisplaySection>
       }
