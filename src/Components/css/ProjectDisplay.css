@@ -2,7 +2,8 @@
   margin: 1rem;
   margin-right: 2rem;
   font-size: 120%;
-  flex: 1
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .selected-project-section {
