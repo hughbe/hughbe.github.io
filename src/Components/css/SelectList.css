@@ -16,6 +16,7 @@
 @media (min-width: 725px) {
   .select-list {
     margin-bottom: 1rem;
+    flex: 0 0 75%;
   }
 
   .select-list.has-selection {
