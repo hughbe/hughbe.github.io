@@ -16,6 +16,10 @@
   margin: 1rem 0;
 }
 
+.selected-project-metadata > div {
+  width: 100%;
+}
+
 .selected-project .selected-project-links {
   float: right;
 }
