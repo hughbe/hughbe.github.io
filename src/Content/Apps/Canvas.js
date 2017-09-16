@@ -1,6 +1,7 @@
 const Canvas = {
   name: 'Canvas',
   itunesUrl: 'https://itunes.apple.com/gb/app/canvas/id777551805',
+  githubUrl: 'https://github.com/hughbe/canvas',
   description: 'A fully customizable drawing interface suited to all your artistic desires and expressions: the only thing limiting you is your artistic ability.',
   screenshots: 3,
   features: [

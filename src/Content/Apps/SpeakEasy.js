@@ -1,6 +1,7 @@
 const SpeakEasy = {
   name: 'Speak Easy',
   itunesUrl: 'https://itunes.apple.com/gb/app/speak-easy/id716763156',
+  githubUrl: 'https://github.com/hughbe/speak-easy',
   description: 'An app that converts text to speech in an incredibly configurable way.',
   screenshots: 3,
   features: [

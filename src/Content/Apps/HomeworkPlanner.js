@@ -1,6 +1,7 @@
 const HomeworkPlanner = {
   name: 'Homework Planner',
   itunesUrl: 'https://itunes.apple.com/gb/app/homework-planner/id505295949',
+  githubUrl: 'https://github.com/hughbe/homework-planner',
   description: 'Homework and School Planner is the ideal app for students of all ages at school or university to stay organised and simplify your working life.',
   screenshots: 3,
   features: [
