@@ -44,7 +44,9 @@ const ProjectDisplay = ({ project, ...rest }) => {
           <span dangerouslySetInnerHTML={{__html: project.description}} />
         </div>
       </ProjectDisplaySection>
+      {screenshots.length !== 0 &&
       <ProjectDisplaySection id="screenshots">{screenshots}</ProjectDisplaySection>
+      }
       <ProjectDisplaySection title="Features" id="features">
         <SimpleList>{project.features}</SimpleList>
       </ProjectDisplaySection>
