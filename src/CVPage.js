@@ -42,12 +42,16 @@ export default class CVPage extends Component {
   }
 
   componentDidMount() {
-    const section = this.getSection(this.props);
-    const element = document.getElementById(getSectionId(section));
-    const top = element.offsetTop - 10;
-
     window.addEventListener('scroll', this.handleScrolled);
-    window.$('html,body').animate({scrollTop: `${top}px`});
+
+    const sectionParams = this.props.match.params.section;
+    if (sectionParams) {
+      const section = this.getSection(this.props);
+      const element = document.getElementById(getSectionId(section));
+      const top = element.offsetTop - 10;
+  
+      window.$('html,body').animate({scrollTop: `${top}px`});
+    }
   }
 
   componentWillUnmount() {
