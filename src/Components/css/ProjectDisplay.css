@@ -22,6 +22,15 @@
 
 .selected-project .selected-project-links {
   float: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 410px) {
+  .selected-project .selected-project-links {
+    width: 100%;
+    flex-flow: wrap;
+  }
 }
 
 .selected-project .selected-project-links a {
@@ -35,6 +44,27 @@
 .selected-project-screenshots {
   display: flex;
   width: 100%;
+  flex-flow: wrap;
+}
+
+@media (max-width: 450px) {
+  .selected-project-screenshots > div {
+    min-width: 75% !important;
+    max-width: 75% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .selected-project-screenshots {
+    justify-content: center;
+  }
+
+  .selected-project-screenshots > div {
+    min-width: 55%;
+    max-width: 55%;
+    margin-bottom: 1rem;
+    margin-right: 0rem !important;
+  }
 }
 
 .selected-project-screenshots > div {
