@@ -47,11 +47,9 @@
   flex-flow: wrap;
 }
 
-@media (max-width: 450px) {
-  .selected-project-screenshots > div {
-    min-width: 75% !important;
-    max-width: 75% !important;
-  }
+.selected-project-screenshots > div {
+  flex: 1;
+  margin-right: 1rem;
 }
 
 @media (max-width: 550px) {
@@ -63,13 +61,15 @@
     min-width: 55%;
     max-width: 55%;
     margin-bottom: 1rem;
-    margin-right: 0rem !important;
+    margin-right: 0rem;
   }
 }
 
-.selected-project-screenshots > div {
-  flex: 1;
-  margin-right: 1rem;
+@media (max-width: 450px) {
+  .selected-project-screenshots > div {
+    min-width: 75%;
+    max-width: 75%;
+  }
 }
 
 .selected-project-screenshots > div:last-child {
