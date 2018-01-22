@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.work-summary .work-name {
+  font-weight: bolder;
+}
+
 .work-summary .work-header:first {
   margin-right: 0.5rem;
 }
