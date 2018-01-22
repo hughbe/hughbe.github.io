@@ -1,7 +1,6 @@
 {
   "name": "hughbellamy.co.uk",
   "version": "0.1.0",
-  "private": true,
   "homepage": "http://hughbellamy.co.uk",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
