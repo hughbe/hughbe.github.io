@@ -1,0 +1,17 @@
+.blog-posts {
+  width: 75%;
+  align-self: center;
+}
+
+.blog-posts .blog-under-construction {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-flow: wrap;
+  text-align: center;
+  font-size: 175%;
+}
+
+.blog-posts .blog-under-construction > * {
+  width: 100%;
+}

@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import AppsPage from './AppsPage';
 import OpenSourceProjectsPage from './OpenSourceProjectsPage';
 import CVPage from './CVPage';
+import BlogPage from './BlogPage';
 import Error404Page from './Error404Page';
 
 export default class App extends Component {
@@ -19,6 +20,7 @@ export default class App extends Component {
             <Route path="/open-source/:projectId?" component={OpenSourceProjectsPage} />
             <Route path="/resume/:section?" component={CVPage} />
             <Route path="/cv/:section?" component={CVPage} />
+            <Route path="/blog/:article?" component={BlogPage} />
             <Route component={Error404Page} />
           </Switch>
         </div>
