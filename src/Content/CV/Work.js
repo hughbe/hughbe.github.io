@@ -5,7 +5,7 @@ const Work = [
     duration: '6 months, February 2017 - August 2017',
     title: 'Intern',
     location: 'Phnom Penh, Cambodia',
-    description: `Helping the startup program section of the NGO in Cambodia. Projects I am involved in include:
+    description: `Helping the startup program section of the NGO in Cambodia. Projects I worked on include:
 <ul>
   <li><strong>AsiaChat:</strong> collecting and analysing Facebook posts in Cambodia and Laos on multiple political and media pages, to expand on viewpoints in civil society.</li>
   <li><strong><a href="http://tekhub.co">TEKHUB:</a></strong> an incubator for social enterprise startups in technology.</li>

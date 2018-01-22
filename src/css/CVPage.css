@@ -1,43 +1,83 @@
 .cv-page {
+  font-size: 130%;
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.cv-page .cv-section-container {
+  width: 100%;
+}
+
+.cv-page .cv-section-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 40vh;
+  padding: 1em 0;
+}
+
+.cv-section .cv-section-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+#about-section,
+#open-source-section,
+#academic-section,
+#work-and-internships-section {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#about-section,
+#open-source-section .cv-section-title {
+  color: #f0f0f0;
+}
+
+#about-section {
+  background-color: #2D3E50;
   font-size: 110%;
 }
 
-.cv-page .sidebar-right {
-  margin-right: 2rem;
-  margin-left: 1rem;
+#coding-section {
+  background-color: #F3F3F3;
 }
 
-.cv-page .select-list {
-  flex: 0 0 auto;
-  flex-shrink: 1;
+#open-source-section {
+  background-color: #2d3e50;
+  color: #e5e8ec;
 }
 
-@media (max-width: 768px) {
-  .cv-page {
-    flex-flow: column;
-  }
-
-  .cv-page .sidebar-right {
-    margin-right: 1rem;
-  }
-
-  .cv-page .select-list {
-    padding: 0.25rem;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    background-color: #f6f6f6;
-    border-bottom: 1px solid #444;
-  }
-
-  .select-list.has-selection li {
-    margin: 0.5rem;
-    flex: 0 0 auto;
-  }
+#open-source-section a {
+  color: #b68dac;
 }
 
-.introduction-text > span {
-  background-color: #F8CEDA;
+#academic-section,
+#personal-details-section {
+  background-color: #EFEFEF;
+}
+
+#work-and-internships-section .cv-details .cv-detail {
+  min-width: 400px;
+}
+
+#personal-details-section p {
+  margin: 0.5em;
+}
+
+.cv-details {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.cv-details .cv-detail {
+  margin: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 200px;
+  text-align: center;
 }
 
 .coding-apps {
@@ -45,17 +85,15 @@
   flex-flow: wrap;
 }
 
-.coding-apps,
-.coding-open-source,
-.work-history {
+.coding-apps {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
 .bordered-box {
   padding: 1rem;
-  border: 1px dotted #444;
-  border-radius: 10px;
+  border: 0.5px solid #444;
+  border-radius: 5px;
   margin: 0.5rem;
 }
 
@@ -63,12 +101,6 @@
   margin: 0 -1rem;
 }
 
-.academic-result {
-  display: block;
-  padding-top: 0.25rem;
-  margin-left: 1rem;
-}
-
-.work-referees > p {
-  margin-left: 0.75rem;
+.cv-section-hidden {
+  display: none;
 }

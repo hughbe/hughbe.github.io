@@ -9,8 +9,9 @@ const CV = {
   sections: [
     'About',
     'Coding',
+    'Open Source',
     'Academic',
-    'Work/Internships',
+    'Work & Internships',
     'Personal'
   ]
 };

@@ -19,7 +19,8 @@ export default class AppsPage extends Component {
   render() {
     const { animateAppear } = this.state;
     const { appId } = this.props.match.params;
-    const lowerAppId = appId && appId.toLowerCase();
+    const lowerAppIdRaw = appId && appId.toLowerCase();
+    const lowerAppId = lowerAppIdRaw === 'school-planner' ? 'homework-planner' : lowerAppIdRaw;
 
     const selectedApp = appId && Apps.find(app => makeLink(app.name).toLowerCase() === lowerAppId);
     if (appId && !selectedApp) {

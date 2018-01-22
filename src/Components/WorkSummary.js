@@ -4,21 +4,19 @@ import './css/WorkSummary.css';
 export default class WorkSummary extends Component {
   render() {
     const { work } = this.props;
+    let title;
+    if (work.title || work.location) {
+      title = `${work.title ? work.title : ''}${work.title && work.location ? ': ' : ''}${work.location} (${work.duration})`;
+    } else {
+      title = work.duration;
+    }
 
     return (
-      <div className="work-summary bordered-box">
-        <div className="work-header">
-          <h3 className="work-name">
-            <a href={work.url}>{work.name}</a>
-          </h3>
-          <div className="work-duration">{work.duration}</div>
-        </div>
-        {work.title && work.location &&
-        <div className="work-header">
-          <p className="work-title">{work.title}</p>
-          <p className="work-location">{work.location}</p>
-        </div>
-        }
+      <div className="work-summary cv-detail">
+        <h3 className="work-name">
+          <a href={work.url}>{work.name}</a>
+        </h3>
+        <p>{title}</p>
         <div
           className="work-description"
           dangerouslySetInnerHTML={{__html: work.description}} />
