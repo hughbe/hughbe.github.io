@@ -17,6 +17,10 @@
     flex-flow: column;
   }
 
+  .cv-page .sidebar-right {
+    margin-right: 1rem;
+  }
+
   .cv-page .select-list {
     padding: 0.25rem;
     margin: 0;
