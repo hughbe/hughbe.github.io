@@ -59,8 +59,10 @@
   background-color: #EFEFEF;
 }
 
-#work-and-internships-section .cv-details .cv-detail {
-  min-width: 400px;
+@media (min-width: 500px) {
+  #work-and-internships-section .cv-details .cv-detail {
+    min-width: 400px;
+  }
 }
 
 #personal-details-section p {
@@ -76,8 +78,13 @@
   margin: 1rem;
   flex-grow: 1;
   flex-basis: 0;
-  min-width: 200px;
   text-align: center;
+}
+
+@media (min-width: 300px) {
+  .cv-details .cv-detail {
+    min-width: 200px;
+  }
 }
 
 .coding-apps {
