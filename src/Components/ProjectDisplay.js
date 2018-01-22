@@ -21,7 +21,7 @@ const ProjectDisplay = ({ project, ...rest }) => {
   return (
     <section {...rest}>
       <ProjectDisplaySection id="metadata">
-        <div>
+        <div className="selected-project-header">
           <span className="selected-project-links">
           {project.itunesUrl &&
             <a href={project.itunesUrl}>
@@ -41,7 +41,7 @@ const ProjectDisplay = ({ project, ...rest }) => {
             </a>
           }
           </span>
-          <span dangerouslySetInnerHTML={{__html: project.description}} />
+          <span className="selected-project-description" dangerouslySetInnerHTML={{__html: project.description}} />
         </div>
       </ProjectDisplaySection>
       {screenshots.length !== 0 &&

@@ -16,7 +16,7 @@
   margin: 1rem 0;
 }
 
-.selected-project-metadata > div {
+.selected-project .selected-project-header {
   width: 100%;
 }
 

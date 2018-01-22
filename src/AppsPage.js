@@ -25,7 +25,7 @@ export default class AppsPage extends Component {
     if (appId && !selectedApp) {
       return <Error404Page />;
     }
-    
+
     return (
       <main>
         <SelectList
