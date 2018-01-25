@@ -65,8 +65,16 @@
   }
 }
 
+#personal-details-section {
+  text-align: center;
+}
+
+#personal-details-section h1 {
+  color: #2d3e50;
+}
+
 #personal-details-section p {
-  margin: 0.5em;
+  margin: 1em;
 }
 
 .cv-details {

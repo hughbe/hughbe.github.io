@@ -149,12 +149,12 @@ export default class CVPage extends Component {
             <p><strong>Skype and Phone:</strong> <a href="mailto:hughbellars@gmail.com">please request</a></p>
 
             <p><strong>Languages:</strong> {CV.personal.languages}</p>
-            <p><strong>Travel:</strong> {CV.personal.travel}</p>
+            <p><strong>Travel:</strong> <span dangerouslySetInnerHTML={{__html: CV.personal.travel}} /></p>
             <p><strong>Sport:</strong> {CV.personal.sport}</p>
             <p><strong>Music:</strong> {CV.personal.music}</p>
           </div>
           <div className="personal-references">
-            <h4>References - please ask for contact details:</h4>
+            <h3>References - please ask for contact details:</h3>
             <p><strong>Fabio Fabrizio:</strong> Head of Technology at SYZYGY</p>
             <p><strong>Andrew Sykes:</strong> Senior economics tutor at St Paul's School</p>
           </div>
