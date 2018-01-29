@@ -1,8 +1,8 @@
-html, body, #root, *[data-reactroot] {
+html, body, #root, #root > div {
   min-height: 100vh;
 }
 
-*[data-reactroot] {
+#root > div {
   display: flex;
   flex-direction: column;
 }
