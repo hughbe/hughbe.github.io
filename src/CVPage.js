@@ -85,7 +85,7 @@ export default class CVPage extends Component {
         </CVSection>
         <CVSection title="Coding">
           <p>I self-taught programming aged 13, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
-          <p>I have experience with web technologies such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in backend and application development. I also have experience using Python for data analytics and NLP.</p>
+          <p>I have experience with web technologies such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in backend and application development. I also have experience using Python and R for data analytics and NLP.</p>
           <p>Sharing my knowledge of programming is great fun. I have published C# tutorials on YouTube which have gained 30,000 views, and also act as a tutor for application and web development.</p>
           <div className="coding-apps">
             {CV.coding.apps.map(app => <AppSummary key={app.name} app={app} />)}
