@@ -23,6 +23,28 @@
   text-align: center;
 }
 
+#about-section {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#coding-section {
+  z-index: 2;
+}
+
+#open-source-section {
+  z-index: 3;
+}
+
+#academic-section {
+  z-index: 4;
+}
+
+#work-and-internships-section {
+  z-index: 5;
+}
+
 #about-section,
 #open-source-section,
 #academic-section,
@@ -57,6 +79,10 @@
 #academic-section,
 #personal-details-section {
   background-color: #EFEFEF;
+}
+
+#work-and-internships-section  {
+  background-color: white;
 }
 
 @media (min-width: 500px) {
