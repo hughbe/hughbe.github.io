@@ -38,7 +38,7 @@ body {
   }
 
   .sticky-sidebar {
-    min-width: 90vh;
+    min-height: 90vh;
   }
 
   @supports (position: sticky) {
