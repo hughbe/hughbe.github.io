@@ -2,6 +2,11 @@
   "name": "hughbellamy.co.uk",
   "version": "0.1.0",
   "homepage": "http://hughbellamy.co.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hughbe/hughbe.github.io.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "gh-pages": "^1.0.0",
