@@ -84,9 +84,9 @@ export default class CVPage extends Component {
           <p className="introduction-text"><span>I'm a 19 year old student studying Politics, Philosophy and Economics at Oxford University. In my spare time I develop apps, hack on side projects and contribute to open source projects.</span></p>
         </CVSection>
         <CVSection title="Coding">
-          <p>I self-taught programming aged 13, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
-          <p>I have experience with web technologies such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in backend and application development. I also have experience using Python and R for data analytics and NLP.</p>
-          <p>Sharing my knowledge of programming is great fun. I have published C# tutorials on YouTube which have gained 30,000 views, and also act as a tutor for application and web development.</p>
+          <p>I <strong>self-taught programming aged 13</strong>, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
+          <p>I have experience with <strong>web technologies</strong> such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in <strong>backend and application development</strong>. I also have experience using Python and R for <strong>data analytics and NLP.</strong></p>
+          <p>Sharing my knowledge of programming is great fun. I have published <strong>C# tutorials on YouTube</strong> which have gained 30,000 views, and also act as a tutor for application and web development.</p>
           <div className="coding-apps">
             {CV.coding.apps.map(app => <AppSummary key={app.name} app={app} />)}
           </div>

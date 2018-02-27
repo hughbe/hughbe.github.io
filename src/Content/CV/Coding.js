@@ -3,18 +3,10 @@ const Coding = {
     {
       name: 'Homework Planner',
       category: 'Productivity & Education',
-      price: 'Free',
-      downloads: '115,000+',
+      price: 'Free with In-App Purchases',
+      downloads: '150,000+',
       milestones: '71st most downloaded app in category in UK, Top 100 in category in 45 countries (05.09.12)',
       description: 'A basic homework planner for students.'
-    },
-    {
-      name: 'School Planner',
-      category: 'Productivity & Education',
-      price: '$0.99',
-      downloads: '4,500+',
-      milestones: '73rd most downloaded app in category in UK, Top 100 in category in 18 countries (28.01.13)',
-      description: 'An advanced homework and timetable planner for students.'
     },
     {
       name: 'ClickBoard',
