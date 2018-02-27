@@ -30,6 +30,7 @@ export default class AppsPage extends Component {
     return (
       <main>
         <SelectList
+          className="sticky-sidebar"
           selected={selectedApp && selectedApp.name}
           baseLink="/apps"
           showImage

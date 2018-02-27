@@ -1,8 +1,12 @@
 const HomeworkPlanner = {
   name: 'Homework Planner',
+  category: 'Productivity & Education',
+  price: 'Free',
   itunesUrl: 'https://itunes.apple.com/gb/app/homework-planner/id505295949',
   githubUrl: 'https://github.com/hughbe/homework-planner',
   description: 'Homework and School Planner is the ideal app for students of all ages at school or university to stay organised and simplify your working life.',
+  shortDescription: 'A homework planner and timetable for students.',
+  downloads: '150,000+',
   screenshots: 3,
   features: [
     'View all pieces and homework and lessons in the future using the calendar view',
@@ -21,6 +25,7 @@ const HomeworkPlanner = {
     languages: 'Objective C',
     frameworks: 'UIKit, CoreAnimation, Foundation, CoreData and EventKit',
     technologies: 'Auto Layout, Storyboards and In-App Purchases'
-  }
+  },
+  milestones: '71st most downloaded app in category in UK, Top 100 in category in 45 countries (05.09.12)'
 };
 export default HomeworkPlanner;

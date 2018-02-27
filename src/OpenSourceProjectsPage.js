@@ -18,6 +18,7 @@ const OpenSourceProjectsPage = ({ match }) => {
   return (
     <main>
       <SelectList
+        className="sticky-sidebar"
         selected={selectedProject && selectedProject.name}
         baseLink="/open-source"
       >

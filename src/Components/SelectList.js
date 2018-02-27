@@ -3,8 +3,8 @@ import makeLink from '../Utilities/MakeLink';
 import SelectListItem from './SelectListItem';
 import './css/SelectList.css';
 
-const SelectList = ({ selected, children, ...other }) => (
-  <section className={`select-list sticky-sidebar${selected ? ' has-selection' : ''}`}>
+const SelectList = ({ className, selected, children, ...other }) => (
+  <section className={`select-list ${selected ? ' has-selection' : ''}${className ? ` ${className}` : ''}`}>
     {children && children.map(child => 
       <SelectListItem
         key={child}

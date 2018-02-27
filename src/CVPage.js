@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import makeLink from './Utilities/MakeLink';
 import CV from './Content/CV';
+import Apps from './Content/Apps';
+import FadeTransition from './Components/Common/FadeTransition';
+import SelectList from './Components/SelectList';
 import AppSummary from './Components/AppSummary';
 import WorkSummary from './Components/WorkSummary';
 import './css/CVPage.css';
+import ProjectDisplay from './Components/ProjectDisplay';
 
 const getSectionId = (title) => `${makeLink(title.toLowerCase())}-section`;
 
@@ -60,6 +64,13 @@ export default class CVPage extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (!this.props.match.params.appId && nextProps.match.params.appId) {
+      // We're selecting something for the first time.
+      this.setState({animateAppear: true});
+    }
+  }
+
   componentDidUpdate(prevProps) {
     if (this.props.match.params.section !== prevProps.match.params.section) {
       const section = this.getSection(this.props);
@@ -76,7 +87,10 @@ export default class CVPage extends Component {
   }
 
   render() {
-    const { epqVisible } = this.state;
+    const { epqVisible, animateAppear } = this.state;
+    const { appId } = this.props.match.params;
+    const lowerAppId = appId && appId.toLowerCase();
+    const selectedApp = appId && Apps.find(app => makeLink(app.name).toLowerCase() === lowerAppId);
 
     return (
       <main className="cv-page">
@@ -87,8 +101,20 @@ export default class CVPage extends Component {
           <p>I <strong>self-taught programming aged 13</strong>, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
           <p>I have experience with <strong>web technologies</strong> such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in <strong>backend and application development</strong>. I also have experience using Python and R for <strong>data analytics and NLP.</strong></p>
           <p>Sharing my knowledge of programming is great fun. I have published <strong>C# tutorials on YouTube</strong> which have gained 30,000 views, and also act as a tutor for application and web development.</p>
-          <div className="coding-apps">
-            {CV.coding.apps.map(app => <AppSummary key={app.name} app={app} />)}
+          <div className="coding-apps-container">
+            <SelectList
+              className="coding-apps"
+              selected={selectedApp && selectedApp.name}
+              baseLink="/cv/app"
+              showImage
+            >
+              {Apps.map(app => app.name)}
+            </SelectList>
+            {selectedApp &&
+            <FadeTransition className="app-summary" transitionAppear={animateAppear}>
+              <AppSummary key={selectedApp.name} app={selectedApp} />
+            </FadeTransition>
+            }
           </div>
         </CVSection>
         <CVSection title="Open Source">
@@ -148,10 +174,10 @@ export default class CVPage extends Component {
             <p><strong>Email:</strong> <a href="mailto:hughbellars@gmail.com">hughbellars@gmail.com</a></p>
             <p><strong>Skype and Phone:</strong> <a href="mailto:hughbellars@gmail.com">please request</a></p>
 
-            <p><strong>Languages:</strong> {CV.personal.languages}</p>
-            <p><strong>Travel:</strong> <span dangerouslySetInnerHTML={{__html: CV.personal.travel}} /></p>
-            <p><strong>Sport:</strong> {CV.personal.sport}</p>
-            <p><strong>Music:</strong> {CV.personal.music}</p>
+            <p><strong>Languages:</strong> Written and spoken Russian, Serbian</p>
+            <p><strong>Travel:</strong> Vietnam, Cambodia, Thailand, Laos, Myanmar, India, Sri Lanka, <br />Syria, Jordan, Egypt, Israel, Tanzania, Russia, USA, Continental Europe</p>
+            <p><strong>Sport:</strong> Tennis, golf, fives, rackets, squash, skiing</p>
+            <p><strong>Music:</strong> Grade 5 saxophone, singing</p>
           </div>
           <div className="personal-references">
             <h3>References - please ask for contact details:</h3>

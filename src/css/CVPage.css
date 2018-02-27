@@ -45,6 +45,10 @@
   z-index: 5;
 }
 
+#personal-details-section {
+  z-index: 6;
+}
+
 #about-section,
 #open-source-section,
 #academic-section,
@@ -121,25 +125,56 @@
   }
 }
 
-.coding-apps {
+.coding-apps-container {
   display: flex;
-  flex-flow: wrap;
+  align-items: flex-start;
+  flex-grow: 1;
+  justify-content: center;
+  flex-flow: column;
 }
 
-.coding-apps {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+@media (min-width: 725px) {
+  .coding-apps-container {
+    flex-flow: row;
+  }
 }
 
-.bordered-box {
-  padding: 1rem;
-  border: 0.5px solid #444;
-  border-radius: 5px;
-  margin: 0.5rem;
+@media (max-width: 650px) {
+  .select-list.coding-apps {
+    flex-flow: column;
+  }
+
+  .select-list.coding-apps:not(.has-selection) .select-list-item {
+    margin: 0.75rem;
+  }
 }
 
-.bordered-box hr {
-  margin: 0 -1rem;
+
+@media (min-width: 650px) {
+  .select-list.coding-apps:not(.has-selection) .select-list-item {
+    margin: 1.5rem;
+  }
+}
+
+.select-list.coding-apps {
+  margin: 0;
+}
+
+.select-list.coding-apps:not(.has-selection) {
+  flex: 0 0 100%;
+}
+
+.select-list.coding-apps:not(.has-selection) .select-list-item {
+  flex: 0 0 auto;
+}
+
+.select-list.coding-apps.has-selection .select-list-item {
+  margin-left: 0;
+}
+
+.app-summary {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .cv-section-hidden {
