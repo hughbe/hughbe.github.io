@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import makeLink from '../Utilities/MakeLink';
-import FadeTransition from './Common/FadeTransition';
 import './css/AppSummary.css';
 
 const AppSummary = ({ app, ...rest }) => {

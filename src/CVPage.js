@@ -7,7 +7,6 @@ import SelectList from './Components/SelectList';
 import AppSummary from './Components/AppSummary';
 import WorkSummary from './Components/WorkSummary';
 import './css/CVPage.css';
-import ProjectDisplay from './Components/ProjectDisplay';
 
 const getSectionId = (title) => `${makeLink(title.toLowerCase())}-section`;
 
