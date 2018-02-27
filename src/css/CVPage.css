@@ -23,9 +23,14 @@
   text-align: center;
 }
 
+@supports (position: sticky) {
+  .csspositionsticky #about-section {
+    position: sticky;
+    top: 0px;
+  }
+}
+
 #about-section {
-  position: sticky;
-  top: 0px;
   z-index: 1;
 }
 

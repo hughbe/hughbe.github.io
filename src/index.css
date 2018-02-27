@@ -38,9 +38,14 @@ body {
   }
 
   .sticky-sidebar {
-    position: sticky;
-    top: 0;
-    min-height: 90vh;
+    min-width: 90vh;
+  }
+
+  @supports (position: sticky) {
+    .csspositionsticky .sticky-sidebar {
+      position: sticky;
+      top: 0;
+    }
   }
 }
 
