@@ -1,26 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import makeLink from '../Utilities/MakeLink';
+import SelectListItem from './SelectListItem';
 import './css/SelectList.css';
 
-const SelectList = ({ selected, baseLink, showImage, children }) => (
+const SelectList = ({ selected, children, ...other }) => (
   <section className={`select-list sticky-sidebar${selected ? ' has-selection' : ''}`}>
-    {children && children.map(child => (
-      <li
+    {children && children.map(child => 
+      <SelectListItem
         key={child}
-        className={selected && makeLink(selected.toLowerCase()) === makeLink(child.toLowerCase()) ? 'selected' : ''}
-      >
-        {showImage &&
-          <img
-            src={require(`../Content/Logos/${child}.png`)}
-            width="75"
-            height="75"
-            alt={child}
-          />
-        }
-        <Link to={`${baseLink}/${makeLink(child)}`}>{child}</Link>
-      </li>
-    ))}
+        selected={selected && makeLink(selected.toLowerCase()) === makeLink(child.toLowerCase())}
+        name={child}
+        {...other}
+      />
+    )}
   </section>
 )
 export default SelectList;
