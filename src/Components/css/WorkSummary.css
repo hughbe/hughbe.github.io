@@ -1,27 +1,87 @@
-.work-summary {
-  padding: 1rem;
+.work-history-item {
+  flex-basis: 22.5%;
+  margin: 2.5%;
+  display: flex;
+  align-items: center;
 }
 
-.work-summary .work-header {
+.work-history-item.selected {
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-basis: 100%;
+}
+
+.work-history-item.selected .work-image {
+  flex: 1;
+}
+
+.work-history-item.selected .work-details {
+  flex: 2;
+}
+
+@media (max-width: 650px) {
+  .work-history-item {
+    flex-direction: column;
+  }
+
+  .work-history-item.selected {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .work-history-item .work-image {
+    width: 60%;
+  }
+
+  .work-history-item .work-name {
+    display: none;
+  }
+  
+  .work-details {
+    margin: 0rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .work-details {
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+.work-details .work-header {
   display: flex;
   flex-flow: wrap;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.work-summary .work-name {
+.work-details .work-name {
   font-weight: bolder;
 }
 
-.work-summary .work-header:first {
+.work-details .work-header:first {
   margin-right: 0.5rem;
 }
 
-.work-summary .work-header > * {
+.work-details .work-header > * {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
-.work-summary .work-description {
+.work-details .work-description {
   margin-top: 0.5rem;
+}
+
+.work-details .job-details {
+  margin-top: 0.5rem;
+}
+
+.work-details .job-detail h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.work-details .job-detail p {
+  margin-top: 0;
 }

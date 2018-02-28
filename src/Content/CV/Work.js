@@ -5,12 +5,22 @@ const Work = [
     duration: '6 months, February 2017 - August 2017',
     title: 'Intern',
     location: 'Phnom Penh, Cambodia',
-    description: `Helping the startup program section of the NGO in Cambodia. Projects I worked on include:
-<ul>
-  <li><strong>AsiaChat:</strong> collecting and analysing Facebook posts in Cambodia and Laos on multiple political and media pages, to expand on viewpoints in civil society.</li>
-  <li><strong><a href="http://tekhub.co">TEKHUB:</a></strong> an incubator for social enterprise startups in technology.</li>
-  <li><strong>Bong Srey:</strong> developing and marketing, a job website for the 700,000 women in the Cambodian textile industry.</li>
-</ul>`
+    description: `Working in the startup program section of the NGO in Cambodia. Projects I worked on include:
+<div class="job-details">
+  <div class="job-detail">
+    <h3>AsiaChat</h3>
+    <p>Collecting and analysing Facebook posts in Cambodia and Laos on multiple political and media pages, to expand on viewpoints in civil society.</p>
+  </div>
+  <div class="job-detail">
+    <h3><a href="http://tekhub.co">TEKHUB</a></h3>
+    <p>Managing logistics, organising, marketing and hosting events at an incubator for social enterprise startups in technology.</p>
+  </div>
+  <div class="job-detail">
+    <h3>Bong Srey</h3>
+    <p>Developing and marketing, a job website for the 700,000 women in the Cambodian textile industry.</p>
+  </div>
+</div>
+`
   },
   {
     name: 'SYZYGY',

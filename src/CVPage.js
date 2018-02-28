@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import makeLink from './Utilities/MakeLink';
+import makeLink, { findWithLink } from './Utilities/MakeLink';
 import CV from './Content/CV';
 import Apps from './Content/Apps';
 import FadeTransition from './Components/Common/FadeTransition';
@@ -7,6 +7,7 @@ import SelectList from './Components/SelectList';
 import AppSummary from './Components/AppSummary';
 import WorkSummary from './Components/WorkSummary';
 import './css/CVPage.css';
+import Work from './Content/CV/Work';
 
 const getSectionId = (title) => `${makeLink(title.toLowerCase())}-section`;
 
@@ -87,9 +88,8 @@ export default class CVPage extends Component {
 
   render() {
     const { epqVisible, animateAppear } = this.state;
-    const { appId } = this.props.match.params;
-    const lowerAppId = appId && appId.toLowerCase();
-    const selectedApp = appId && Apps.find(app => makeLink(app.name).toLowerCase() === lowerAppId);
+    const selectedApp = findWithLink(Apps, this.props.match.params.appId);
+    const selectedWork = findWithLink(Work, this.props.match.params.workId);
 
     return (
       <main className="cv-page">
@@ -160,8 +160,14 @@ export default class CVPage extends Component {
           </div>
         </CVSection>
         <CVSection title="Work & Internships">
-          <div className="cv-details">
-            {CV.work.map(work => <WorkSummary key={work.name} work={work} />)}
+          <div className="work-history">
+            {Work.map(work => (
+              <WorkSummary
+                key={work.name}
+                work={work}
+                selected={true/*selectedWork && selectedWork.name === work.name*/}
+              />
+            ))}
           </div>
         </CVSection>
         <CVSection title="Personal Details">
