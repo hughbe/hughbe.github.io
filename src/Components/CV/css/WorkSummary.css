@@ -47,6 +47,14 @@
     margin: 1rem;
     margin-left: 2rem;
   }
+  
+  
+  @supports (position: sticky) {
+    .csspositionsticky .work-image {
+      position: sticky;
+      top: 10px;
+    }
+  }
 }
 
 .work-details .work-header {
