@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import makeLink, { findWithLink } from '../Utilities/MakeLink';
+import makeLink from '../Utilities/MakeLink';
 import './css/WorkSummary.css';
 
 export default class WorkSummary extends Component {

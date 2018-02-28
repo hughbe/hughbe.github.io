@@ -89,7 +89,7 @@ export default class CVPage extends Component {
   render() {
     const { epqVisible, animateAppear } = this.state;
     const selectedApp = findWithLink(Apps, this.props.match.params.appId);
-    const selectedWork = findWithLink(Work, this.props.match.params.workId);
+    /*const selectedWork = findWithLink(Work, this.props.match.params.workId);*/
 
     return (
       <main className="cv-page">
