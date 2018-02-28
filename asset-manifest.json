@@ -1,15 +1,21 @@
 {
-  "main.css": "static/css/main.06b6367a.css",
-  "main.css.map": "static/css/main.06b6367a.css.map",
-  "main.js": "static/js/main.d1af04b0.js",
-  "main.js.map": "static/js/main.d1af04b0.js.map",
+  "main.css": "static/css/main.c5611533.css",
+  "main.css.map": "static/css/main.c5611533.css.map",
+  "main.js": "static/js/main.5988aab4.js",
+  "main.js.map": "static/js/main.5988aab4.js.map",
   "static/media/1.png": "static/media/1.182a8cda.png",
   "static/media/2.png": "static/media/2.14bf2e27.png",
   "static/media/3.png": "static/media/3.1c6c90d2.png",
+  "static/media/Accenture.png": "static/media/Accenture.905327ac.png",
   "static/media/App Store.svg": "static/media/App Store.d0558d91.svg",
   "static/media/Canvas.png": "static/media/Canvas.4e0975fe.png",
   "static/media/Homework Planner.png": "static/media/Homework Planner.fe82e1f7.png",
   "static/media/Hugh Bellamy EPQ.docx": "static/media/Hugh Bellamy EPQ.3d62098d.docx",
   "static/media/Hugh Bellamy EPQ.pdf": "static/media/Hugh Bellamy EPQ.4893a614.pdf",
-  "static/media/Speak Easy.png": "static/media/Speak Easy.2cca921a.png"
+  "static/media/JP Morgan.png": "static/media/JP Morgan.c990e9dd.png",
+  "static/media/National Institute for Economic and Social Research.png": "static/media/National Institute for Economic and Social Research.eba70bd4.png",
+  "static/media/SYZYGY.png": "static/media/SYZYGY.40000596.png",
+  "static/media/Speak Easy.png": "static/media/Speak Easy.2cca921a.png",
+  "static/media/The Asia Foundation.png": "static/media/The Asia Foundation.8e73657a.png",
+  "static/media/Young Enterprise.png": "static/media/Young Enterprise.61b83188.png"
 }
