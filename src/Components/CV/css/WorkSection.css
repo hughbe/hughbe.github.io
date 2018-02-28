@@ -1,0 +1,26 @@
+#work-and-internships-section  {
+  background-color: white;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  z-index: 5;
+}
+
+@media (min-width: 500px) {
+  #work-and-internships-section .cv-details .cv-detail {
+    min-width: 400px;
+  }
+}
+
+.work-history {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.work-image img {
+  width: 100%;
+}
+
+.work-history-item a:hover {
+  border-bottom: white;
+}

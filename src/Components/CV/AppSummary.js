@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import makeLink from '../Utilities/MakeLink';
+import makeLink from '../../Utilities/MakeLink';
 import './css/AppSummary.css';
 
 const AppSummary = ({ app, ...rest }) => {
@@ -11,7 +11,7 @@ const AppSummary = ({ app, ...rest }) => {
       <div className="app-container">
         <div className="app-image">
           <img
-            src={require(`../Content/Screenshots/${id}/1.png`)}
+            src={require(`../../Content/Screenshots/${id}/1.png`)}
             alt={app.name}
           />
         </div>

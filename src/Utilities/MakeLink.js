@@ -3,7 +3,9 @@ const makeLink = (name) => name && name.replace(/ /g, '-').replace(/\//g, '-').r
 const findWithLink = (array, name) => {
   const lower = name && name.toLowerCase();
   return lower && array.find(project => makeLink(project.name).toLowerCase() === lower);
-}
+};
 
-export { findWithLink };
+const getSectionId = (title) => `${makeLink(title.toLowerCase())}-section`;
+
+export { findWithLink, getSectionId };
 export default makeLink;

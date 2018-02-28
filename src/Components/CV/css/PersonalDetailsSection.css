@@ -1,0 +1,13 @@
+#personal-details-section {
+  background-color: #EFEFEF;
+  text-align: center;
+  z-index: 6;
+}
+
+#personal-details-section h1 {
+  color: #2d3e50;
+}
+
+#personal-details-section p {
+  margin: 1em;
+}

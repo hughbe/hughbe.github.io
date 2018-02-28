@@ -1,0 +1,15 @@
+#open-source-section {
+  background-color: #2d3e50;
+  color: #e5e8ec;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  z-index: 3;
+}
+
+#open-source-section .cv-section-title {
+  color: #f0f0f0;
+}
+
+#open-source-section a {
+  color: #b68dac;
+}

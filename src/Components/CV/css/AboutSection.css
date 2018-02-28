@@ -1,0 +1,15 @@
+#about-section {
+  z-index: -1;
+  background-color: #2D3E50;
+  color: #f0f0f0;
+  font-size: 110%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+@supports (position: sticky) {
+  .csspositionsticky #about-section {
+    position: sticky;
+    top: 0px;
+  }
+}

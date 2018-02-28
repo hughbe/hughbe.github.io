@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import makeLink from '../Utilities/MakeLink';
+import makeLink from '../../Utilities/MakeLink';
 import './css/WorkSummary.css';
 
 export default class WorkSummary extends Component {
@@ -22,13 +22,13 @@ export default class WorkSummary extends Component {
       title = work.duration;
     }
 
-    const actuallySelected = selected || this.state[work.name];
+    const actuallySelected = selected || this.state[work.name] || true;
     return (
       <div className={`${actuallySelected ? 'selected ' : ''}work-history-item`} key={work.name}>
         <div className="work-image">
           <Link to={`/cv/work/${makeLink(work.name)}`} onClick={this.onClick}>
             <img
-              src={require(`../Content/Logos/${work.name}.png`)}
+              src={require(`../../Content/Logos/${work.name}.png`)}
               alt={work.name}
             />
           </Link>
