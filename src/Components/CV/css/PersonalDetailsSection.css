@@ -8,6 +8,8 @@
   color: #2d3e50;
 }
 
-#personal-details-section .cv-details .cv-detail {
-  min-width: 400px;
+@media (min-width: 450px) {
+  #personal-details-section .cv-details .cv-detail {
+    min-width: 400px;
+  }
 }
