@@ -23,7 +23,7 @@ export default class CodingSection extends Component {
     return (
       <CVSection title="Coding">
         <p>I <strong>self-taught programming aged 13</strong>, starting with C#. I soon moved onto iOS apps and now enjoy contributing to open source projects.</p>
-        <p>I have experience with <strong>web technologies</strong> such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in <strong>backend and application development</strong>. I also have experience using Python and R for <strong>data analytics and NLP.</strong></p>
+        <p>I have experience with web technologies such as React, Javascript, HTML and CSS. I've used C#, C++ and Python in <strong>backend and application development</strong>. I also have experience using Python and R for <strong>data analytics and NLP.</strong></p>
         <p>Sharing my knowledge of programming is great fun. I have published <strong>C# tutorials on YouTube</strong> which have gained 30,000 views, and also act as a tutor for application and web development.</p>
         <div className="coding-apps-container">
           <SelectList

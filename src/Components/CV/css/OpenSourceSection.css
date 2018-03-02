@@ -11,5 +11,10 @@
 }
 
 #open-source-section a {
-  color: #b68dac;
+  color: white;
+  font-weight: bold;
+}
+
+#open-source-section a:hover {
+  border-bottom-color: white;
 }
