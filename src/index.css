@@ -3,8 +3,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #root {
-  min-height: 100vh;
+html, body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
 }
 
 #root {
