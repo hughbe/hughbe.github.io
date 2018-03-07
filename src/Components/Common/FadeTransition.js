@@ -1,16 +1,12 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 import './css/FadeTransition.css';
 
-const FadeTransition = ({ children, ...rest }) => (
-  <CSSTransitionGroup
-    transitionName="fade"
-    transitionAppearTimeout={1000}
-    transitionEnterTimeout={300}
-    transitionLeaveTimeout={250}
-    {...rest}
-  >
-    {children}
-  </CSSTransitionGroup>
+const FadeTransition = (props) => (
+  <CSSTransition
+    {...props}
+    classNames="fade"
+    timeout={{ enter: 500, exit: 300 }}
+  />
 );
 export default FadeTransition;

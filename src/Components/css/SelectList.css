@@ -5,6 +5,7 @@
   justify-content: center;
   margin: 1rem;
   margin-bottom: 0;
+  transition: all 1s;
 }
 
 @media (min-width: 725px) {
@@ -12,14 +13,6 @@
     margin-bottom: 1rem;
     flex: 0 0 75%;
   }
-
-  .select-list.has-selection {
-    flex: 0 0 25%;
-  }
-}
-
-.select-list {
-  transition: all 1s;
 }
 
 .select-list:not(.has-selection) li {

@@ -2,8 +2,7 @@ import React from 'react';
 import makeLink from './Utilities/MakeLink';
 import OpenSourceProjects from './Content/OpenSourceProjects';
 import Error404Page from './Error404Page';
-import FadeTransition from './Components/Common/FadeTransition';
-import SelectList from './Components/SelectList';
+import DividedSelectList from './Components/DividedSelectList';
 import ProjectDisplay from './Components/ProjectDisplay';
 
 const OpenSourceProjectsPage = ({ match }) => {
@@ -16,20 +15,15 @@ const OpenSourceProjectsPage = ({ match }) => {
   }
 
   return (
-    <main>
-      <SelectList
-        className="sticky-sidebar"
-        selected={selectedProject && selectedProject.name}
-        baseLink="/open-source"
-      >
-      {OpenSourceProjects.map(project => project.name)}
-      </SelectList>
-      {selectedProject &&
-      <FadeTransition className="sidebar-right selected-project">
-        <ProjectDisplay key={selectedProject.name} project={selectedProject} />
-      </FadeTransition>
-      }
-    </main>
+    <DividedSelectList
+      className="sticky-sidebar"
+      selected={selectedProject && selectedProject.name}
+      baseLink="/open-source"
+      mainDisplay={selectedProject && <ProjectDisplay project={selectedProject} />}
+      mainClassName="selected-project"
+    >
+    {OpenSourceProjects.map(project => project.name)}
+    </DividedSelectList>
   );
 };
 export default OpenSourceProjectsPage;

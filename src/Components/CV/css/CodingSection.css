@@ -3,20 +3,6 @@
   background-color: #fafafa;
 }
 
-.coding-apps-container {
-  display: flex;
-  align-items: flex-start;
-  flex-grow: 1;
-  justify-content: center;
-  flex-flow: column;
-}
-
-@media (min-width: 725px) {
-  .coding-apps-container {
-    flex-flow: row;
-  }
-}
-
 @media (max-width: 650px) {
   .select-list.coding-apps {
     flex-flow: column;

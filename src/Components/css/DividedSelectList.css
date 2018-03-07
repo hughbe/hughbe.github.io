@@ -1,0 +1,7 @@
+.divided-select-list.selected .select-list {
+  flex: 1;
+}
+
+.divided-select-list.selected .main-display {
+  flex: 3;
+}

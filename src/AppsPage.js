@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import makeLink from './Utilities/MakeLink';
 import Apps from './Content/Apps';
 import Error404Page from './Error404Page';
-import FadeTransition from './Components/Common/FadeTransition';
-import SelectList from './Components/SelectList';
+import DividedSelectList from './Components/DividedSelectList';
 import ProjectDisplay from './Components/ProjectDisplay';
 
 export default class AppsPage extends Component {
@@ -28,21 +27,16 @@ export default class AppsPage extends Component {
     }
 
     return (
-      <main>
-        <SelectList
-          className="sticky-sidebar"
-          selected={selectedApp && selectedApp.name}
-          baseLink="/apps"
-          showImage
-        >
-        {Apps.map(app => app.name)}
-        </SelectList>
-        {selectedApp &&
-        <FadeTransition transitionAppear={animateAppear} className="sidebar-right selected-project">
-          <ProjectDisplay key={selectedApp.name} project={selectedApp} />
-        </FadeTransition>
-        }
-      </main>
+      <DividedSelectList
+        className="sticky-sidebar"
+        selected={selectedApp && selectedApp.name}
+        baseLink="/apps"
+        showImage
+        mainDisplay={selectedApp && <ProjectDisplay project={selectedApp} />}
+        mainClassName={"selected-project"}
+      >
+      {Apps.map(app => app.name)}
+      </DividedSelectList>
     );
   }
 }
