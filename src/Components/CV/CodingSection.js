@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { findWithLink } from '../../Utilities/MakeLink';
 import DividedSelectList from '../DividedSelectList';
 import CVSection from './CVSection';
