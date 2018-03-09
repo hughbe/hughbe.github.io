@@ -1,5 +1,14 @@
 const Work = [
   {
+    name: 'The Oxford Union',
+    url: 'https://www.oxford-union.org/',
+    duration: 'Trinity Term 2017',
+    title: 'Logistics Officer',
+    location: 'Oxford, United Kingdom',
+    description: `Assisting the President and the Chair of the Consultative Committee in managing, organizing and facilitating speaker events, panels and debates.
+`
+  },
+  {
     name: 'The Asia Foundation',
     url: 'http://asiafoundation.org/',
     duration: '6 months, February 2017 - August 2017',
