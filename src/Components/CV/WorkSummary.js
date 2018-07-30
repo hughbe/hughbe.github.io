@@ -3,6 +3,24 @@ import { Link } from 'react-router-dom';
 import makeLink from '../../Utilities/MakeLink';
 import './css/WorkSummary.css';
 
+const WorkSummarySection = ({ work }) => {
+  let title;
+  if (work.title || work.location) {
+    title = `${work.title ? work.title : ''}${work.title && work.location ? ': ' : ''}${work.location || ''} (${work.duration})`;
+  } else {
+    title = work.duration;
+  }
+
+  return (
+    <div className="work-section">
+      <p><strong>{title}</strong></p>
+      <div
+        className="work-description"
+        dangerouslySetInnerHTML={{__html: work.description}} />
+    </div>
+  );
+};
+
 export default class WorkSummary extends Component {
   state = {}
   
@@ -15,12 +33,6 @@ export default class WorkSummary extends Component {
 
   render() {
     const { work, selected } = this.props;
-    let title;
-    if (work.title || work.location) {
-      title = `${work.title ? work.title : ''}${work.title && work.location ? ': ' : ''}${work.location} (${work.duration})`;
-    } else {
-      title = work.duration;
-    }
 
     const actuallySelected = selected || this.state[work.name] || true;
     return (
@@ -38,10 +50,10 @@ export default class WorkSummary extends Component {
             <h3 className="work-name">
               <a href={work.url}>{work.name}</a>
             </h3>
-            <p><strong>{title}</strong></p>
-            <div
-              className="work-description"
-              dangerouslySetInnerHTML={{__html: work.description}} />
+            {work.blurb && <p>{work.blurb}</p>}
+            {work.details.map((details, i) => 
+              <WorkSummarySection key={i} work={details} />
+            )}
           </div>
         }
       </div>

@@ -47,14 +47,6 @@
     margin: 1rem;
     margin-left: 2rem;
   }
-  
-  
-  @supports (position: sticky) {
-    .csspositionsticky .work-image {
-      position: sticky;
-      top: 10px;
-    }
-  }
 }
 
 .work-details .work-header {
@@ -92,4 +84,9 @@
 
 .work-details .job-detail p {
   margin-top: 0;
+}
+
+.work-section {
+  margin-bottom: 1rem;
+  text-align: left;
 }
