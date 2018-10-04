@@ -51,7 +51,7 @@ const Work = [
         title: 'Junior Developer',
         location: 'London, United Kingdom',
         duration: '4 months, October 2016 - January 2017',
-        description: 'Backend development of milk delivery service <a href="https://milkman.co.uk">Milk and More</a>. Developed ASP.NET Core WebAPI responsible for customer data, managing and triggering deliveries and billing of subscriptions and addons.'
+        description: 'ASP.NET Core backend development of milk delivery service <a href="https://milkman.co.uk">Milk and More</a>, responsible for customer data, managing and triggering deliveries and billing of subscriptions and addons.'
       }
     ]
   },
@@ -99,13 +99,13 @@ const Work = [
     ]
   },
   {
-    name: 'European Union',
+    name: 'European Union Delegation to Serbia',
     url: 'http://www.seio.gov.rs/',
     details: [
       {
         location: 'Belgrade, Serbia',
         duration: '1 week, October 2015',
-        description: '3 days at the EU delegation to Serbia in Belgrade. Researched my EPQ and discovered more about how the EU interacts with the Serbian government to meet requirements for EU membership.'
+        description: 'Researched my EPQ and discovered more about how the EU interacts with the Serbian government to meet requirements for EU membership.'
       }
     ]
   }
