@@ -1,1 +1,34 @@
-"use strict";var precacheConfig=[["/index.html","16f0e35fb18b01acbc74618471bb23d2"],["/static/css/main.26097045.css","72d5508f963548d4eb4077389d1bce9b"],["/static/js/main.0ee1d326.js","b2f0607a534f1df1c6befc7c9abca77e"],["/static/media/1.00a5c82a.png","00a5c82a1754cc7922db337e7e049295"],["/static/media/1.182a8cda.png","182a8cda6b7f6a39fc60fff4b982ee5e"],["/static/media/1.1a99cf70.png","1a99cf702123d12819bce2d16c753064"],["/static/media/1.3878248d.png","3878248d856e06a0e04ddc3e1078d40a"],["/static/media/1.48ce2eb0.png","48ce2eb09d4f62bd1c4115c27ee9559e"],["/static/media/1.50b4cf7b.png","50b4cf7bd98efa8ac3cf3ae66860561a"],["/static/media/1.63a10dbc.png","63a10dbcf8e1cc26df90b637884e00a5"],["/static/media/1.973939c8.png","973939c8c15bb2251828bcd5b496adea"],["/static/media/1.9f83bc42.png","9f83bc42d715dddcd5efd9bf32265f55"],["/static/media/1.a2895fef.png","a2895fefc5d4e1465d4818405eb4165d"],["/static/media/1.a8bd7f4c.png","a8bd7f4cf8396ba5ecb18b61f47e2f58"],["/static/media/1.d83b93dd.png","d83b93dd9055e8c9ea4821db7a738f4b"],["/static/media/1.d9686fa7.png","d9686fa70c2445341b4c2f27b3f7c265"],["/static/media/2.0013c594.png","0013c594deac2fe9e6ba252c341240c8"],["/static/media/2.14bf2e27.png","14bf2e27140a33e7590565bec7e553e2"],["/static/media/2.35b092df.png","35b092df4ccc95e1bbfe9a1525c156ba"],["/static/media/2.5073b1a2.png","5073b1a2580d330ec8140473ae6e41e2"],["/static/media/2.5a0ab2c2.png","5a0ab2c299d3ceb77c5b2228fa9c7a4b"],["/static/media/2.5e5f9f46.png","5e5f9f463114c13980ec4af5b5c73a35"],["/static/media/2.a9dc7c49.png","a9dc7c498e82b29aa4579e44f08b7114"],["/static/media/2.c36bae4f.png","c36bae4fb9540bc1e0eccf9900e5f0dc"],["/static/media/3.0aca54e1.png","0aca54e1d19a3301e41f9f73b534a98d"],["/static/media/3.1c6c90d2.png","1c6c90d288aeb46998578bc89174c4fe"],["/static/media/3.593d9a18.png","593d9a18f4710f0273a791bebf7de9ba"],["/static/media/3.9b6bfdef.png","9b6bfdef8741c12885ee5ef1089faebc"],["/static/media/3.fc5ee961.png","fc5ee9617c17d2c410cb275dad1520c6"],["/static/media/Accenture.905327ac.png","905327ac6c2986ea897be0b05833e9c7"],["/static/media/App Store.d0558d91.svg","d0558d91063038236b60e3ef71fdc1fd"],["/static/media/Canvas.4e0975fe.png","4e0975fed690484f408765081b852066"],["/static/media/Homework Planner.fe82e1f7.png","fe82e1f73027b9a06f4e7849d1e774ab"],["/static/media/Hugh Bellamy EPQ.3d62098d.docx","3d62098d76defc1445259e5591e70ed0"],["/static/media/Hugh Bellamy EPQ.4893a614.pdf","4893a6146effa6423b816d46d18da2a1"],["/static/media/JP Morgan.c990e9dd.png","c990e9ddf95b436891fe7b6069b25591"],["/static/media/National Institute for Economic and Social Research.eba70bd4.png","eba70bd47b2021fc1325409c6eb1c8d1"],["/static/media/SYZYGY.40000596.png","4000059612d3f72e308e96ce8915d957"],["/static/media/Speak Easy.2cca921a.png","2cca921aa0b03a2ae4ea41d42af88f2f"],["/static/media/The Asia Foundation.8e73657a.png","8e73657a2315a62d62dbd3f7307c8430"],["/static/media/The Oxford Union.0d62a434.png","0d62a434f5deac4c7b639a323308fdb8"],["/static/media/Young Enterprise.61b83188.png","61b83188089d88e584d35c57f23d3631"]],cacheName="sw-precache-v3-sw-precache-webpack-plugin-"+(self.registration?self.registration.scope:""),ignoreUrlParametersMatching=[/^utm_/],addDirectoryIndex=function(e,a){var t=new URL(e);return"/"===t.pathname.slice(-1)&&(t.pathname+=a),t.toString()},cleanResponse=function(a){return a.redirected?("body"in a?Promise.resolve(a.body):a.blob()).then(function(e){return new Response(e,{headers:a.headers,status:a.status,statusText:a.statusText})}):Promise.resolve(a)},createCacheKey=function(e,a,t,c){var n=new URL(e);return c&&n.pathname.match(c)||(n.search+=(n.search?"&":"")+encodeURIComponent(a)+"="+encodeURIComponent(t)),n.toString()},isPathWhitelisted=function(e,a){if(0===e.length)return!0;var t=new URL(a).pathname;return e.some(function(e){return t.match(e)})},stripIgnoredUrlParameters=function(e,t){var a=new URL(e);return a.hash="",a.search=a.search.slice(1).split("&").map(function(e){return e.split("=")}).filter(function(a){return t.every(function(e){return!e.test(a[0])})}).map(function(e){return e.join("=")}).join("&"),a.toString()},hashParamName="_sw-precache",urlsToCacheKeys=new Map(precacheConfig.map(function(e){var a=e[0],t=e[1],c=new URL(a,self.location),n=createCacheKey(c,hashParamName,t,/\.\w{8}\./);return[c.toString(),n]}));function setOfCachedUrls(e){return e.keys().then(function(e){return e.map(function(e){return e.url})}).then(function(e){return new Set(e)})}self.addEventListener("install",function(e){e.waitUntil(caches.open(cacheName).then(function(c){return setOfCachedUrls(c).then(function(t){return Promise.all(Array.from(urlsToCacheKeys.values()).map(function(a){if(!t.has(a)){var e=new Request(a,{credentials:"same-origin"});return fetch(e).then(function(e){if(!e.ok)throw new Error("Request for "+a+" returned a response with status "+e.status);return cleanResponse(e).then(function(e){return c.put(a,e)})})}}))})}).then(function(){return self.skipWaiting()}))}),self.addEventListener("activate",function(e){var t=new Set(urlsToCacheKeys.values());e.waitUntil(caches.open(cacheName).then(function(a){return a.keys().then(function(e){return Promise.all(e.map(function(e){if(!t.has(e.url))return a.delete(e)}))})}).then(function(){return self.clients.claim()}))}),self.addEventListener("fetch",function(a){if("GET"===a.request.method){var e,t=stripIgnoredUrlParameters(a.request.url,ignoreUrlParametersMatching),c="index.html";(e=urlsToCacheKeys.has(t))||(t=addDirectoryIndex(t,c),e=urlsToCacheKeys.has(t));var n="/index.html";!e&&"navigate"===a.request.mode&&isPathWhitelisted(["^(?!\\/__).*"],a.request.url)&&(t=new URL(n,self.location).toString(),e=urlsToCacheKeys.has(t)),e&&a.respondWith(caches.open(cacheName).then(function(e){return e.match(urlsToCacheKeys.get(t)).then(function(e){if(e)return e;throw Error("The cached response that was expected is missing.")})}).catch(function(e){return console.warn('Couldn\'t serve response for "%s" from cache: %O',a.request.url,e),fetch(a.request)}))}});
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+
+importScripts(
+  "/precache-manifest.6d7cde2ed7e1d70962c04033fa32b02d.js"
+);
+
+workbox.clientsClaim();
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerNavigationRoute("/index.html", {
+  
+  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+});
