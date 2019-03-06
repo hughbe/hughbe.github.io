@@ -17,19 +17,18 @@ export default class AcademicSection extends Component {
     return (
       <CVSection title="Academic">
         <div className="cv-details">
-          <CVDetail title="A Levels">
-            <strong>1A*:</strong> Maths <br />
-            <strong>2As:</strong> Chemistry, Economics
+          <CVDetail title="University">
+            <strong>Prelimary Examinations:</strong> Class 2(1) <br />
+            <strong>Q-Step Data Science Module:</strong> Class 1
           </CVDetail>
           <CVDetail title="Extended Project">
             <strong>A*:</strong> Serbia's democratic and economic transition - which has EU conditionality promoted more? <br />
             Click <a href="#toggleEpq" onClick={this.toggleBool('epqVisible')}>here</a> to reveal the abstract
           </CVDetail>
-          <CVDetail title="AS Levels">
-            <strong>4 As:</strong> Chemistry, Economics, Maths, Russian
-          </CVDetail>
-          <CVDetail title="GCSEs">
-          <strong>10 A*s:</strong> Maths, English Language, English Literature, Physics, Chemistry, Biology, Latin, Russian, Spanish, Geography
+          <CVDetail title="School">
+            <strong>A Levels:</strong> 1A*, 2As; Maths, Chemistry, Economics <br /><br />
+            <strong>AS Levels:</strong> 4As; Chemistry, Economics, Maths, Russian <br /><br />
+            <strong>GCSEs:</strong> 10A*s
           </CVDetail>
         </div>
         <div className={`${!epqVisible ? 'cv-section-hidden ' : ''}epq-abstract`}>

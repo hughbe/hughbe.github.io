@@ -4,6 +4,11 @@ const Work = [
     url: 'https://www.oxford-union.org/',
     details: [
       {
+        title: 'Director of Digital Operations',
+        duration: 'Hilary Term 2019 - ',
+        description: 'Leading the development of the Oxford Union App, managing the Facebook page and website.'
+      },
+      {
         title: 'Secretary\'s Committee',
         duration: 'Michaelmas Term 2018',
         description: 'Inviting speakers, facilitating events and leading the development of the Oxford Union App.'
