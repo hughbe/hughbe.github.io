@@ -7,6 +7,7 @@ import OpenSourceProjectsPage from './OpenSourceProjectsPage';
 import CVPage from './CVPage';
 import BlogPage from './BlogPage';
 import Error404Page from './Error404Page';
+import IsShopOpenYetPage from './IsShopOpenYet';
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends Component {
             <Route path="/cv/work/:workId?" component={CVPage} />
             <Route path="/cv/:section?" component={CVPage} />
             <Route path="/blog/:article?" component={BlogPage} />
+            <Route path="/is-shop-open-yet" component={IsShopOpenYetPage} />
             <Route component={Error404Page} />
           </Switch>
         </div>
