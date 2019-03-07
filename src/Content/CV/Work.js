@@ -41,7 +41,7 @@ const Work = [
           </div>
           <div class="job-detail">
             <h3>Bong Srey</h3>
-            <p>Developing and marketing, a job website for the 700,000 women in the Cambodian textile industry.</p>
+            <p>Developing and marketing a job website for the 700,000 women in the Cambodian textile industry.</p>
           </div>
         </div>
         `
