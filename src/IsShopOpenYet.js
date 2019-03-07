@@ -15,8 +15,8 @@ const openingTimes = [
   {
     name: 'Thursday',
     times: {
-      start: 17.75,
-      end: 6.25
+      start: 17.50,
+      end: 18.00
     }
   },
   {
