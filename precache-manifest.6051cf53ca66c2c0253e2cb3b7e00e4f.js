@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/SYZYGY.40000596.png"
   },
   {
-    "revision": "2449d92eddc1c0908925",
+    "revision": "89be475448bd880a655f",
     "url": "/static/css/main.bde9e2d5.chunk.css"
   },
   {
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/static/media/National Institute for Economic and Social Research.eba70bd4.png"
   },
   {
-    "revision": "2449d92eddc1c0908925",
-    "url": "/static/js/main.2449d92e.chunk.js"
+    "revision": "89be475448bd880a655f",
+    "url": "/static/js/main.89be4754.chunk.js"
   },
   {
     "revision": "2cca921aa0b03a2ae4ea41d42af88f2f",
@@ -172,7 +172,7 @@ self.__precacheManifest = [
     "url": "/static/media/Hugh Bellamy EPQ.3d62098d.docx"
   },
   {
-    "revision": "ab05095f6d1fa948b451fe006740e053",
+    "revision": "fb2b3f4e473377f514560110110ca529",
     "url": "/index.html"
   }
 ];
