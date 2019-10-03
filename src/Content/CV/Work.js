@@ -1,12 +1,23 @@
 const Work = [
   {
+    name: 'Basis Research',
+    url: 'https://www.basisresearch.com/',
+    details: [
+      {
+        title: 'Intern',
+        duration: 'September - October 2019',
+        description: 'Performing and analysing market research including focus groups, workshops and online communities. Clients I worked with include Google, Netflix and BT.'
+      }
+    ]
+  },
+  {
     name: 'The Oxford Union',
     url: 'https://www.oxford-union.org/',
     details: [
       {
         title: 'Director of Digital Operations',
-        duration: 'Hilary Term 2019 - ',
-        description: 'Leading the development of the Oxford Union App, managing the Facebook page and website.'
+        duration: 'Hilary Term 2019 - Michaelmas Term 2019',
+        description: 'Leading the development of the Oxford Union App, managing the Facebook page and website. Personally responsible for inviting the Prime Minister of Serbia and the President of Montenegro.'
       },
       {
         title: 'Secretary\'s Committee',
