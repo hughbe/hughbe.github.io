@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cdb9724.chunk.css",
-    "main.js": "/static/js/main.9064df25.chunk.js",
-    "main.js.map": "/static/js/main.9064df25.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.4067c3bf.chunk.js": "/static/js/2.4067c3bf.chunk.js",
-    "static/js/2.4067c3bf.chunk.js.map": "/static/js/2.4067c3bf.chunk.js.map",
+    "main.css": "/static/css/main.f3f7ff1b.chunk.css",
+    "main.js": "/static/js/main.555edb76.chunk.js",
+    "main.js.map": "/static/js/main.555edb76.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f3cef7c0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f3cef7c0.js.map",
+    "static/js/2.5ba4bc39.chunk.js": "/static/js/2.5ba4bc39.chunk.js",
+    "static/js/2.5ba4bc39.chunk.js.map": "/static/js/2.5ba4bc39.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.25a989992684b786c1901e33e965f4e2.js": "/precache-manifest.25a989992684b786c1901e33e965f4e2.js",
+    "precache-manifest.bc250de7c40e700999993d8dbb3df2ab.js": "/precache-manifest.bc250de7c40e700999993d8dbb3df2ab.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2cdb9724.chunk.css.map": "/static/css/main.2cdb9724.chunk.css.map",
+    "static/css/main.f3f7ff1b.chunk.css.map": "/static/css/main.f3f7ff1b.chunk.css.map",
+    "static/js/2.5ba4bc39.chunk.js.LICENSE.txt": "/static/js/2.5ba4bc39.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.d9686fa7.png",
     "static/media/2.png": "/static/media/2.c36bae4f.png",
     "static/media/3.png": "/static/media/3.fc5ee961.png",
     "static/media/Accenture.png": "/static/media/Accenture.905327ac.png",
     "static/media/App Store.svg": "/static/media/App Store.d0558d91.svg",
     "static/media/Canvas.png": "/static/media/Canvas.4e0975fe.png",
+    "static/media/HSBC.png": "/static/media/HSBC.b40156fc.png",
     "static/media/Homework Planner.png": "/static/media/Homework Planner.fe82e1f7.png",
     "static/media/Hugh Bellamy EPQ.docx": "/static/media/Hugh Bellamy EPQ.3d62098d.docx",
     "static/media/Hugh Bellamy EPQ.pdf": "/static/media/Hugh Bellamy EPQ.4893a614.pdf",
@@ -27,5 +29,11 @@
     "static/media/The Asia Foundation.png": "/static/media/The Asia Foundation.8e73657a.png",
     "static/media/The Oxford Union.png": "/static/media/The Oxford Union.0d62a434.png",
     "static/media/Young Enterprise.png": "/static/media/Young Enterprise.61b83188.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3cef7c0.js",
+    "static/js/2.5ba4bc39.chunk.js",
+    "static/css/main.f3f7ff1b.chunk.css",
+    "static/js/main.555edb76.chunk.js"
+  ]
 }
