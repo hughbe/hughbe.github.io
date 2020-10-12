@@ -6,7 +6,7 @@ const HomeworkPlanner = {
   githubUrl: 'https://github.com/hughbe/homework-planner',
   description: 'Homework and School Planner is the ideal app for students of all ages at school or university to stay organised and simplify your working life.',
   shortDescription: 'A homework planner and timetable for students.',
-  downloads: '150,000+',
+  downloads: '200,000+',
   screenshots: 3,
   features: [
     'View all pieces and homework and lessons in the future using the calendar view',

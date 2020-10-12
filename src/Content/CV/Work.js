@@ -1,5 +1,16 @@
 const Work = [
   {
+    name: 'HSBC',
+    url: 'https://www.hsbc.co.uk/',
+    details: [
+      {
+        title: 'Summer Analyst',
+        duration: 'July - August 2020',
+        description: 'Summer Analyst in the Financial Institutions Group (FIG) team. Conducted training in finance, financial modelling and accounting. Worked on pitch decks, company profiles and modelling.'
+      }
+    ]
+  },
+  {
     name: 'Basis Research',
     url: 'https://www.basisresearch.com/',
     details: [
@@ -110,7 +121,7 @@ const Work = [
       {
         location: 'London, United Kingdom',
         duration: '1 week, July 2015',
-        description: 'Developed software named Can You Buy Happiness with an academic to research the effect of relative income and perceptions of relative income on happiness. Developed skills in statistical analysis and econometrics.'  
+        description: 'Developed software named Can You Buy Happiness with an academic to research the effect of relative income and perceptions of relative income on happiness. Developed skills in statistical analysis and econometrics.'
       }
     ]
   },
